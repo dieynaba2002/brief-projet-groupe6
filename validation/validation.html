@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../public/css/validation.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../public/css/footer.css">
+    <title>Validations</title>
+</head>
+<body>
+  <div id="progress">
+    <span id="progressValue">&#x1F815</span>
+</div>
+<!-- header -->
+<header>
+
+    <nav class="navbar bg-body-tertiary fixed-top px-5">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a href=""><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Produit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Catégorie et Accessoires</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <a href=""><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </nav>
+
+</header>
+<!-- section banner -->
+<section class="section-banner">
+    <div class="banner-container">
+        
+    </div>
+</section>
+<h6 class="text-center titre">Shop</h6>
+    <div class="container">
+        <div class="header-content1-validate col-lg-12 col-md-12 col-sm-12">
+            <div class="card1-description-validate-un" ><p>SHOPPING CART</p></div>
+            <div class="card1-description-validate"><p>WISHLIST</p></div>
+            <div class="card1-description-validate"><p>CHECKOUT</p></div>
+            <div  id="order-description-validate"><p >ORDER COMPLET</p></div>
+        </div>
+        <div class="header-content2-validate">
+            <div class="para-title-validate">
+                <h6>ORDER NO</h6>
+                <p>M265357</p>
+            </div>
+            <div class="para-title-validate">
+                <h6>DATE</h6>
+                <p>15 JUIN 2021</p>
+            </div>
+            <div class="para-title-validate">
+                <h6>TOTAL</h6>
+                <p>$170.00 </p>
+            </div>
+            <div class="para-title-validate">
+                <h6>PAYMENT METHODES</h6>
+                <p>CHECK PAYMENT </p> 
+            </div>
+        </div>
+          
+       <div class="cards-bottom-validate">
+        <div class="table-title-validate">
+            <div class="left-body-validate">
+                <p class="para-title-validate">OUR ORDER </p>
+                <hr>
+            </div>
+           
+           <div>
+            <table class="table">
+                <thead class="table-light">
+                  <tr>
+                    <td>PRODUCT</td>
+                    <td>TOTAL</td>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DUMMY PRODUCTX2</td>
+                        <td>$168.00</td>
+                      </tr>
+                      <tr>
+                        <td>DUMMY PRODUCTX1</td>
+                        <td>$168.00</td>
+                      </tr>
+                      <tr>
+                        <td>CART SUBPOSTAL</td>
+                        <td>$168.00</td>
+                      </tr>
+                      <tr>
+                        <td>SHIPPING AND HANDING</td>
+                        <td>$168.00</td>
+                      </tr>
+                      <tr>
+                        <td> VAT </td>
+                        <td>$168.00</td>
+                      </tr>
+                      <tr>
+                        <td id="subtotal"> ORDER TOTAL </td>
+                        <td id="subtotal">$168.00</td>
+                      </tr>
+                </tbody>
+              </table>
+           </div>
+        </div>
+        <div class="right-body-validate">
+            <div class="left-body-validate">
+                <p  class="para-title-validate">PAYMENT METHODES </p>
+                <hr>
+            </div>
+            <div class="details-topcontent-validate">
+               <details class="details-body-validate">
+                    <summary>DIRECT BANK TRANSFERT</summary>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem et dignissimos, earum iure ipsam. Non et eaque optio animi modi. Molestias quod officiis minus voluptates quibusdam cumque! Quisquam, ut.
+                </details>
+                 <details class="details-body-validate">
+                    <summary>CHECK PAYMENT</summary>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem et dignissimos, earum iure ipsam. Non et eaque optio animi modi. Molestias quod officiis minus voluptates quibusdam cumque! Quisquam, ut.
+                </details>
+                <details class="details-body-validate">
+                    <summary>PAYPAL</summary>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem et dignissimos, earum iure ipsam. Non et eaque optio animi modi. Molestias quod officiis minus voluptates quibusdam cumque! Quisquam, ut.
+                </details>
+            </div>
+            <button class="btn-order-validate"><a href="">PLACE ORDER</a></button>
+        </div>
+       </div>
+    </div>
+    <footer>
+      <div class="container-footer">
+          <div class="main-footer  px-5 pt-5">
+              <div class="element-main-footer">
+                  <h3>CONTACT US</h3>
+                  <span class="decoration"></span>
+                  <div class="row ">
+                      <div class="col-md-4">
+                          <p class="fw-bold">Adresse : </p>
+  
+                      </div>
+                      <div class="col-md-8">
+                          <p class="">28 Green Tower, Street Name, New York City, USA</p>
+  
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4">
+                          <p class="fw-bold">Cell-Phone :</p>
+  
+                      </div>
+                      <div class="col-md-8">
+                          <p class="">012345 - 123456789</p>
+  
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4">
+                          <p class="fw-bold">Email : </p>
+  
+                      </div>
+                      <div class="col-md-8">
+                          <p class="">your-email@gmail.com</p>
+  
+                      </div>
+                  </div>
+              </div>
+              <div class="element-main-footer">
+                  <h4>ACCOUNTS</h4>
+                  <span class="decoration"></span>
+                  <a href="#"><i class="bi bi-record-circle"></i> My Account</a><br>
+                  <a href="#"><i class="bi bi-record-circle"></i> My Wishlist</a><br>
+                  <a href="#"><i class="bi bi-record-circle"></i> My Cart</a><br>
+                  <a href="#"><i class="bi bi-record-circle"></i> Sign In</a><br>
+                  <a href="#"><i class="bi bi-record-circle"></i> Check out</a>
+              </div>
+              <div class="element-main-footer">
+                  <h4>SHIPPING</h4>
+                  <span class="decoration"></span>
+                  <a href="#"><i class="bi bi-record-circle"></i> My Account</a><br>
+                  <a href="#"><i class="bi bi-record-circle"></i> My Wishlist</a><br>
+                  <a href="#"><i class="bi bi-record-circle"></i> My Cart</a><br>
+                  <a href="#"><i class="bi bi-record-circle"></i> Sign In</a><br>
+                  <a href="#"><i class="bi bi-record-circle"></i> Check out</a>
+              </div>
+              <div class="element-main-footer">
+                  <h4>EMAIL NEWSLETTERS</h4>
+                  <span class="decoration"></span>
+                  <form action="" class="">
+                      <div class="email">
+                          <input type="email" class="" id="inputEmail" placeholder="Email/Address">
+                      </div>
+                      <div class="subscribe">
+                          <button class="d-block mt-2">SUBSCRIBE</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+          <div class="copyright  px-5 py-2">
+              <div class="element-copyright mt-3">
+                  <p>© CodeCarnival 2022. All Rights Reserved.</p>
+              </div>
+              <div class="element-copyright mt-3">
+                  <img src="../public/images/payment/1.png" alt="">
+                  <img src="../public/images/payment/2.png" alt="">
+                  <img src="../public/images/payment/3.png" alt="">
+                  <img src="../public/images/payment/4.png" alt="">
+  
+              </div>
+  
+          </div>
+      </div>
+  
+  </footer>
+ 
+ 
+ <script>
+      // scroll
+          let calcScrollValue = () => {
+              let scrollProgress = document.getElementById('progress');
+              let scrolProgressValue = document.getElementById('progressValue');
+
+              let pos = document.documentElement.scrollTop;
+              let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              let scrollValue = Math.round((pos * 100) / calcHeight)
+              if (pos > 10) {
+                  scrollProgress.style.display = 'grid';
+              } else {
+                  scrollProgress.style.display = 'none';
+              }
+
+              scrollProgress.addEventListener('click', () => {
+                  document.documentElement.scrollTop = 0;
+              })
+
+              scrollProgress.style.background = `conic-gradient( #C8A165 ${scrollValue}%, white ${scrollValue}%)`;
+          }
+
+          // Ajouter un seul gestionnaire d'événements
+          window.addEventListener('scroll', () => {
+              // navBarFixed();
+              calcScrollValue();
+          });
+
+          // Exécutez les fonctions une fois au chargement de la page
+          window.addEventListener('load', () => {
+              // navBarFixed();
+              calcScrollValue();
+          });
+
+          //menu
+          let menuTogler = document.querySelector('.menuTogler');
+          let menuToglerIcon = document.querySelector('.menuTogler i');
+          let dropDownMenu = document.querySelector('.dropDownMenu');
+
+          menuTogler.onclick = function () {
+              dropDownMenu.classList.toggle('open');
+              let isOpen = dropDownMenu.classList.contains('open');
+
+              menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
+          }
+  </script>
+    
+</body>
+</html>
