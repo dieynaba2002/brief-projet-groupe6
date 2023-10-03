@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link cdn bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- link cdn font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link footer.css -->
+    <link rel="stylesheet" href="../public/css/footer.css">
+    <!-- Link detail-produit.css -->
+    <link rel="stylesheet" href="../public/css/detail-produit.css">
+    <!-- Link bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Link shoelace -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/themes/light.css" />
+    <!-- script shoelace -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/shoelace-autoloader.js"></script>
+    <!-- Script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Detail produit</title>
+</head>
+
+<body>
+    <div id="progress">
+        <span id="progressValue">&#x1F815</span>
+    </div>
+    <!-- header -->
+    <header>
+
+        <nav class="navbar bg-body-tertiary fixed-top px-5">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a href=""><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Produit</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Catégorie et Accessoires</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">A propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <a href=""><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+
+    </header>
+    <!-- section banner -->
+    <section class="section-banner">
+        <div class="banner-container">
+
+        </div>
+    </section>
+    <h6 class="text-center titre">SINGLE PRODUCT</h6>
+    <!-- Debut Section grid detail produit-->
+    <section>
+        <div class="grid-container-detail-produit">
+            <div class="grid-item left">
+                <div class="contenu-detail">
+                    <div class="image">
+                        <img src="https://htmldemo.net/hurst-v1/hurst/img/single-product/medium/1.jpg" alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="entete">
+                            <div class="entete-left">
+                                <p class="mois">DUMMY PRODUCT NAME</p>
+                                <p class="test">$ 56.20</p>
+                            </div>
+                            <div class="entete-right">
+                                <span class="icone-star">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span>(27 Rating )</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="texte-detail">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have be suffered alteration in some
+                            form, by injected humou or randomised words which donot look even slightly believable. If you are going to use a passage
+                            of Lorem Ipsum.
+                            </p>
+                        </div>
+                        <div class="color">
+                            <p>Color</p>
+                            <div class="choix-color saumon"></div>
+                            <div class="choix-color corail"></div>
+                            <div class="choix-color maron"></div>
+                            <div class="choix-color rouge"></div>
+                            <div class="choix-color blue"></div>
+                        </div>
+                        <div class="color">
+                            <p>Size</p>
+                            <div class="size">M</div>
+                            <div class="size">S</div>
+                            <div class="size">L</div>
+                            <div class="size">SL</div>
+                            <div class="size">XL</div>
+                        </div>
+                        <div class="panier">
+                            <div class="contain-btn mt-2">
+                                <td class="align-middle border-bottom-0">
+                                    <div class="d-flex flex-row">
+                                        <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                
+                                        <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control form-control-sm"
+                                            style="width: 50px;" />
+                                
+                                        <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </div>
+                            <div class="icone-items">
+                                
+                            </div>
+                        </div>
+                        <div class="caroussel">
+                            <sl-carousel navigation pagination slides-per-page="3" slides-per-move="2" class="mt-4">
+                                <sl-carousel-item style="background: var(--sl-color-red-200); border: 1px solid #c8A165;"><img src="../public/images/product/12.jpg" alt=""></sl-carousel-item>
+                                <sl-carousel-item style="background: var(--sl-color-orange-200); border: 1px solid #c8A165;"><img src="../public/images/product/12.jpg" alt=""></sl-carousel-item>
+                                <sl-carousel-item style="background: var(--sl-color-yellow-200); border: 1px solid #c8A165;"><img src="../public/images/product/12.jpg" alt=""></sl-carousel-item>
+                                <sl-carousel-item style="background: var(--sl-color-green-200); border: 1px solid #c8A165;"><img src="../public/images/product/12.jpg" alt=""></sl-carousel-item>
+                                <sl-carousel-item style="background: var(--sl-color-blue-200); border: 1px solid #c8A165;"><img src="../public/images/product/12.jpg" alt=""></sl-carousel-item>
+                                <sl-carousel-item style="background: var(--sl-color-violet-200); border: 1px solid #c8A165;"><img src="../public/images/product/12.jpg" alt=""></sl-carousel-item>
+                            </sl-carousel>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="customer-desc mt-3">
+                    <div class="description">
+                       <button class="cible">Description</button>
+                       <button>Review &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                       <button>Information</button>
+                       <button>Tags &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    </div>
+                    <div class="customer-review">
+                        <h6 class="fw-bold">CUSTOMER REVIEW</h6>
+                        <hr  class="deco">
+                        <div class="commentaire">
+                            <div class="personne">
+                                <img src="https://htmldemo.net/hurst-v1/hurst/img/reviewer/1.jpg" alt="">
+                            </div>
+                            <div class="contenu-comment">
+                                <h6 style="margin: 0 20px 15px; color: #434343;">GERALD BARNES</h6>
+                                <p>27 Jun, 2021 at 2:30pm</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas elese ifend. Phasellus a felis at est
+                                bibendum feugiat ut eget eni Praesent et messages in con sectetur posuere dolor non.</p>
+                            </div>
+                        </div>
+                        <div class="commentaire">
+                            <div class="personne">
+                                <img src="https://htmldemo.net/hurst-v1/hurst/img/reviewer/1.jpg" alt="">
+                            </div>
+                            <div class="contenu-comment">
+                                <h6 style="margin: 0 20px 15px; color: #434343;">GERALD BARNES</h6>
+                                <p>27 Jun, 2021 at 2:30pm</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas elese ifend. Phasellus a
+                                    felis at est
+                                    bibendum feugiat ut eget eni Praesent et messages in con sectetur posuere dolor non.</p>
+                            </div>
+                        </div>
+                        <h6 class="fw-bold">LEAVE YOUR REVIW</h6>
+                        <hr class="deco">
+                        <p style="color: #434343; font-weight: bold; font-size: 12px;">Your Rating</p>
+                        <div class="contain-star">
+                            <div class="flex-star">
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <div class="flex-star">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <div class="flex-star">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <div class="flex-star">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <div class="flex-star">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                        <div class="formulaire mt-5">
+                            <div class="row g-3">
+                                <div class="col">
+                                    <input type="text" class="form-control rounded-0" placeholder="Your name here..." aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control rounded-0" placeholder="Subject..." aria-label="Last name">
+                                </div>
+                            </div>
+                            <div class="form-floating mt-2">
+                                <textarea class="form-control rounded-0" placeholder="Your review here..." id="floatingTextarea2"
+                                    style="height: 100px" >Your review here...</textarea>
+                                <label for="floatingTextarea2"></label>
+                            </div>
+                            <button class="mt-2 btn-review">SUBMIT REVIEW</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item right">
+                <div class="categorie">
+                    <div class="categories mb-3">
+                        <div class="card rounded-0 border border-0">
+                            <div class="card-header bg-body">
+                                <h5>CATEGORIES</h5>
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p> <a href="#">Chair</a></p>
+                                    <p class="fourniture"> <a href="#">Fourniture</a></p>
+                                    <ul>
+                                        <li> <a href="#">Men Bag</a></li>
+                                        <li> <a href="#">Shoes</a></li>
+                                        <li> <a href="#">Watch</a></li>
+                                        <li> <a href="#">T-Shirt</a></li>
+                                        <li> <a href="#">Shirt</a></li>
+                                    </ul>
+                                    <p> <a href="#">Accessoires</a></p>
+                                    <p> <a href="#">Top Brands</a></p>
+                                    <p> <a href="#">Jewelry</a></p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-product">
+                    <div class="categories mb-3">
+                        <div class="card rounded-0 border border-0">
+                            <div class="card-header bg-body">
+                                <h5>RECENT PRODUCTS</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="info-produit">
+                                    <div class="product-img">
+                                        <img src="../public/images/product/12.jpg" alt="">
+                                    </div>
+                                    <div class="product-name">
+                                        <h6>product Name</h6>
+                                        <span>$56.20</span>
+                                    </div>
+                                </div>
+                                <div class="info-produit mt-2">
+                                    <div class="product-img">
+                                        <img src="../public/images/product/12.jpg" alt="">
+                                    </div>
+                                    <div class="product-name">
+                                        <h6>product Name</h6>
+                                        <span>$56.20</span>
+                                    </div>
+                                </div>
+                                <div class="info-produit mt-2">
+                                    <div class="product-img">
+                                        <img src="../public/images/product/12.jpg" alt="">
+                                    </div>
+                                    <div class="product-name">
+                                        <h6>product Name</h6>
+                                        <span>$56.20</span>
+                                    </div>
+                                </div>
+                                <div class="info-produit mt-2">
+                                    <div class="product-img">
+                                        <img src="../public/images/product/12.jpg" alt="">
+                                    </div>
+                                    <div class="product-name">
+                                        <h6>product Name</h6>
+                                        <span>$56.20</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body px-2">
+                    <div class="best-brand">
+                        <img src="../public/images/banner/5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container-footer">
+            <div class="main-footer  px-5 pt-5">
+                <div class="element-main-footer">
+                    <h3>CONTACT US</h3>
+                    <span class="decoration"></span>
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Adresse : </p>
+
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">28 Green Tower, Street Name, New York City, USA</p>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Cell-Phone :</p>
+
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">012345 - 123456789</p>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Email : </p>
+
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">your-email@gmail.com</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="element-main-footer">
+                    <h4>ACCOUNTS</h4>
+                    <span class="decoration"></span>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Account</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Wishlist</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Cart</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Sign In</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Check out</a>
+                </div>
+                <div class="element-main-footer">
+                    <h4>SHIPPING</h4>
+                    <span class="decoration"></span>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Account</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Wishlist</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Cart</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Sign In</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Check out</a>
+                </div>
+                <div class="element-main-footer">
+                    <h4>EMAIL NEWSLETTERS</h4>
+                    <span class="decoration"></span>
+                    <form action="" class="">
+                        <div class="email">
+                            <input type="email" class="" id="inputEmail" placeholder="Email/Address">
+                        </div>
+                        <div class="subscribe">
+                            <button class="d-block mt-2">SUBSCRIBE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright  px-5 py-2">
+                <div class="element-copyright mt-3">
+                    <p>© CodeCarnival 2022. All Rights Reserved.</p>
+                </div>
+                <div class="element-copyright mt-3">
+                    <img src="../public/images/payment/1.png" alt="">
+                    <img src="../public/images/payment/2.png" alt="">
+                    <img src="../public/images/payment/3.png" alt="">
+                    <img src="../public/images/payment/4.png" alt="">
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script>
+        // scroll
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById('progress');
+            let scrolProgressValue = document.getElementById('progressValue');
+
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight)
+            if (pos > 10) {
+                scrollProgress.style.display = 'grid';
+            } else {
+                scrollProgress.style.display = 'none';
+            }
+
+            scrollProgress.addEventListener('click', () => {
+                document.documentElement.scrollTop = 0;
+            })
+
+            scrollProgress.style.background = `conic-gradient( #C8A165 ${scrollValue}%, white ${scrollValue}%)`;
+        }
+
+        // Ajouter un seul gestionnaire d'événements
+        window.addEventListener('scroll', () => {
+            // navBarFixed();
+            calcScrollValue();
+        });
+
+        // Exécutez les fonctions une fois au chargement de la page
+        window.addEventListener('load', () => {
+            // navBarFixed();
+            calcScrollValue();
+        });
+
+        //menu
+        let menuTogler = document.querySelector('.menuTogler');
+        let menuToglerIcon = document.querySelector('.menuTogler i');
+        let dropDownMenu = document.querySelector('.dropDownMenu');
+
+        menuTogler.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            let isOpen = dropDownMenu.classList.contains('open');
+
+            menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
+        }
+    </script>
+</body>
+
+</html>
