@@ -34,11 +34,13 @@ html {
     width: 100%;
     height: 50vh;
     background-color: #070b0dc8;
+    opacity: 0.5;
 }
 .section-banner{
     background-image: url("../images/bg/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 50vh;
 }
@@ -51,13 +53,13 @@ html {
     font-size: 35px;
     color: #EEEEEE;
     position: relative;
-    top: -150px;
+    top: -23vh;
     margin: 0 auto;
 }
 
 :root {
-    --main-footer-color: #F6F6F6;
-    --copyright-color: #EEEEEE;
+    --main-footer-color: #EEEEEE;
+    --copyright-color:  #F6F6F6;
     --text-color: #666666;
     --text-color-hover: #c8A165;
 }
@@ -76,10 +78,6 @@ html {
     width: 100%;
     display: grid;
     grid-template-rows: 5fr 1fr;
-    /* position: absolute; */
-    /* left: 0;
-    right: 0;
-    bottom: 0; */
     color: var(--text-color);
 }
 
@@ -136,4 +134,28 @@ footer button:hover {
     background-color: var(--text-color-hover);
     color: white;
     transition: 1s;
+}
+
+/* Media querie */
+@media (max-width: 768px){
+    .main-footer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: var(--copyright-color);
+        gap: 3vh;
+        box-sizing: border-box
+    }
+    footer .copyright {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 80%;
+        background-color: var(--main-footer-color);
+    }
+    footer button {
+        border: none;
+        padding: 1vh 4vh;
+        background-color: white;
+        margin-bottom: 10px;
+    }
 }

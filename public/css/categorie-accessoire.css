@@ -1,0 +1,325 @@
+:root {
+    --copyright-color: #F6F6F6;
+    --main-footer-color : #EEEEEE;
+    --text-color: #666666;
+    --text-color-hover: #c8A165;
+    --deco-color: #C87065;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: red;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+}
+.link-home{
+    position: relative;
+    margin-top: -15vh;
+    padding-bottom: 2.5vh;
+    color:white;
+    margin-left: 2vh;
+    font-weight: bold;
+}
+
+.link-home a{
+    color: white;
+}
+
+main{
+    max-width: 100%;
+    background-color: var(--copyright-color);
+    padding: 10vh 0;
+    /* margin-top: 2vh; */
+    /* margin-top: -6.5vh; */
+}
+
+.categories p,li{
+    font-size: 18px;
+}
+
+.price p{
+    font-size: 16px;    
+}
+
+.categories .title{
+    margin-top: -1vh;
+
+}
+.categories .fourniture{
+    color: var(--text-color-hover);
+}
+/* .categories li{
+    font-size: 16px;
+} */
+.categories a{
+    color: black;
+}
+
+.categories li a{
+    color: gray;
+}
+
+
+.color ul li{
+    font-size: 16px;
+    margin-bottom: 1vh;
+    margin-left: -4vh;
+}
+.color ul li .color-elt{
+    padding: 0 1vh;
+    margin-right: 2vh;
+}  
+
+.color ul li .number{
+    float: right;
+}
+
+.color ul li .color1{
+    background-color: #FFA07A;
+    color: #FFA07A;
+}
+.color ul li .color2{
+    background-color: #E9967A;
+    color: #E9967A;
+}
+.color ul li .color3{
+    background-color: #FE5858;
+    color: #FE5858;
+}
+.color ul li .color4{
+    background-color: #00B2EE;
+    color: #00B2EE;
+}
+.color ul li .color5{
+    background-color: #01EEB3;
+    color: #01EEB3;
+}
+.color ul li .color6{
+    background-color: #8DC63F;
+    color: #8DC63F;
+}
+.color ul li .color7{
+    background-color: #C38B4B;
+    color: #C38B4B;
+}
+
+
+.size .card-body button{
+    font-size: 16px;
+    width: 5vh;
+    margin: 1vh 0;
+    /* padding:0 4vh; */
+
+    /* padding: 2vh 0; */
+    /* margin:0 1vh; */
+}
+
+.icone-active{
+    color: var(--text-color-hover);
+}
+
+.categories .star-icone{
+    color: var(--deco-color);
+}
+
+.card-element .my-start{
+    margin-top: -1.2vh;
+
+}
+
+#fist-list-cart .icone{
+    border-right: 2px solid gray;
+    padding: 0 1.2vh;
+}
+#second-list-cart .icone{
+    border-right: 2px solid gray;
+    padding: 0 2vh;
+}
+
+.card-element .title{
+    margin-top: -5vh;
+}
+
+.card-element .title-prix{
+    margin-top: 3px;
+}
+
+.categories .top{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh;
+    position: relative;
+    top: -35vh;
+}
+.categories .top button{
+    border: none;
+    color: white;
+    width: 50px;
+    border-radius: 4px;
+}
+
+.categories .top .new{
+    background-color: var(--text-color-hover);
+
+}
+
+.categories .top .sale{
+    background-color: var(--deco-color);
+}
+
+.top .prix{
+    margin-left: 23vh;
+}
+
+.page-cartes a{
+    color: gray;
+    
+}
+
+.categories .element-price{
+    color: var(--deco-color);
+}
+
+/* Debut dexieme liste  */
+.categories button{
+    border: none;
+    background-color: #E9ECEF;
+}
+
+#second-list-cart{
+    display: none;
+}
+
+/* Media Queries  */
+@media only screen and (min-width: 1400px){
+    .card-element .top{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -30vh;
+    }
+
+    .card-element .top .prix{
+        /* position: initial; */
+        margin-left: 20vh;
+    }
+
+    /* .card-element .icone{
+        border-right: none;
+        border-bottom: 2px solid gray;
+        padding: 0 0.6vh; */
+        /* padding: 0 1.2vh; pour width: >100%; */
+    /* } */
+    
+}
+@media only screen and (max-width: 1300){
+    .card-element .top{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -30vh;
+    }
+
+    .card-element .top .prix{
+        /* position: initial; */
+        margin-left: 20vh;
+    }
+
+    /* .card-element .icone{
+        border-right: none;
+        border-bottom: 2px solid gray;
+        padding: 0 0.6vh; */
+        /* padding: 0 1.2vh; pour width: >100%; */
+    /* } */
+    
+}
+@media only screen and (max-width: 1000px){
+    .card-element .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 2vh;
+        position: relative;
+        top: -35vh;
+    }
+
+    .card-element .top .prix{
+        /* position: initial; */
+        margin-left: 15vh;
+    }
+
+    
+    
+    
+}
+
+@media only screen and (max-width: 960px){
+    .card-element .top{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -11vh;
+    }
+
+    .card-element .top button{
+        margin-left: -1vh;
+        margin-right: 2vh;
+    }
+    .card-element .top .prix{
+        /* position: initial; */
+        margin-left: 3vh;
+    }
+
+    .card-element .icone{
+        border-right: none;
+        border-bottom: 2px solid gray;
+        padding: 0 0.6vh;
+        /* padding: 0 1.2vh; pour width: >100%; */
+    }
+    
+}
+
+/* @media only screen and (max-width: 800px){
+    .card-element .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 2vh;
+        position: relative;
+        top: -15vh;
+    }
+
+    .card-element .top .prix{
+        /* position: initial; */
+        /* margin-left: 30vh;
+    }
+    
+    .card-element .icone{
+        border-right: 2px solid gray;
+        border-bottom: none;
+        padding: 0 2vh;
+        /* padding: 0 1.2vh; pour width: >100%; 
+    }
+}  */
+@media only screen and (max-width: 500px){
+    .card-element .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 2vh;
+        position: relative;
+        top: -30vh;
+    }
+
+    .card-element .top .prix{
+        /* position: initial; */
+        margin-left: 23vh;
+    }
+    
+    .card-element .icone{
+        border-right: 2px solid gray;
+        border-bottom: none;
+        padding: 0 2vh;
+        /* padding: 0 1.2vh; pour width: >100%; */
+    }
+}

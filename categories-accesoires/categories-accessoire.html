@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../public/css/categorie-accessoire.css">
+    <title>Categories et Accessoires</title>
+</head>
+
+<body>
+    <div id="progress">
+        <span id="progressValue">&#x1F815</span>
+    </div>
+    <!-- header -->
+    <header>
+        <nav class="navbar bg-body fixed-top px-5 py-4">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a href=""><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Produit</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Catégorie et Accessoires</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">A propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+    
+                        </ul>
+    
+                    </div>
+                </div>
+                <a href=""><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+    
+    </header>
+    <!-- section banner -->
+    <section class="section-banner">
+        <div class="banner-container">
+            
+        </div>
+    </section>
+    <h6 class="text-center titre">SHOPPING CART</h6>
+
+    <p class="link-home"> <a href="">HOME </a> / PRODUCT LIST VIEW</p>
+
+    <!-- Main -->
+    <main>
+        <!-- First product list view  -->
+        <div class="fist-list">
+            <div class="container">
+                <!-- Division de la zone principale en 2 colonnes  -->
+                <div class="categories row">
+                    <!-- Colonne de taille 4  -->
+                    <div class="col-md-3 px-3 mb-4">
+                        <!-- search  -->
+                        <div class="input-group mb-4 bg-body">
+                            <input type="text" class="form-control border border-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Search here...">
+                            <span class="input-group-text border border-0 bg-body" id="inputGroup-sizing-default"><i class="bi bi-search"></i></span>
+                        </div>
+
+                        <!-- Categories  -->
+                        <div class="categories mb-3">
+                            <div class="card rounded-0 border border-0">
+                                <div class="card-header bg-body">
+                                  <h5>CATEGORIES</h5>
+                                </div>
+                                <div class="card-body">
+                                  <blockquote class="blockquote mb-0">
+                                    <p> <a href="#">Chair</a></p>
+                                    <p class="title"> <a href="#" class="fourniture">Fourniture</a></p>
+                                    <ul class="title">
+                                        <li> <a href="#">Men Bag</a></li>
+                                        <li> <a href="#">Shoes</a></li>
+                                        <li> <a href="#">Watch</a></li>
+                                        <li> <a href="#">T-Shirt</a></li>
+                                        <li> <a href="#">Shirt</a></li>
+                                    </ul>
+                                    <p class="title"> <a href="#">Accessoires</a></p>
+                                    <p class="title"> <a href="#">Top Brands</a></p>
+                                    <p class="title"> <a href="#">Jewelry</a></p>
+                                  </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price  -->
+                        <div class="price mb-3">
+                            <div class="card rounded-0 border border-0">
+                                <div class="card-header bg-body">
+                                  <h5>PRICE</h5>
+                                </div>
+                                <div class="card-body">
+                                  <blockquote class="blockquote mb-0">
+                                    <p> <span class="fw-bold">Your range: </span> <span class="text-body-secondary">$50 - $999</span></p>
+                                    <div>
+                                        <input type="range" id="price-range" class="col-12"  name="price-range" min="0" max="100" value="50" step="1">                                        
+                                    </div>                                 
+                                  </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Color  -->
+                        <div class="color mb-3">
+                            <div class="card rounded-0 border border-0">
+                                <div class="card-header bg-body">
+                                  <h5>COLOR</h5>
+                                </div>
+                                <div class="card-body">
+                                  <blockquote class="blockquote mb-0">
+                                    <ul>
+                                        <li><span class="color-elt color1">1</span> LightSalman <span class="number">12</span></li>
+                                        <li><span class="color-elt color2">1</span> DarkSalman <span class="number">20</span></li>
+                                        <li><span class="color-elt color3">1</span> Tomato <span class="number">59</span></li>
+                                        <li><span class="color-elt color4">1</span> Deep Sky Blue <span class="number">45</span></li>
+                                        <li><span class="color-elt color5">1</span> Electric Purple <span class="number">78</span></li>
+                                        <li><span class="color-elt color6">1</span> Atlantis <span class="number">10</span></li>
+                                        <li><span class="color-elt color7">1</span> Deep Lilac <span class="number">15</span></li>
+                                    </ul>                                    
+                                  </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- size  -->
+                        <div class="size mb-3">
+                            <div class="card text-center rounded-0 border border-0">
+                                <div class="card-header bg-body">
+                                  <h5>SIZE</h5>
+                                </div>
+                                <div class="card-body">
+                                  <blockquote class="blockquote mb-0">
+                                    <button class="py-2 border border-0">M</button>
+                                    <button class="py-2 border border-0">S</button>
+                                    <button class="py-2 border border-0">L</button>
+                                    <button class="py-2 border border-0">SL</button>
+                                    <button class="py-2 border border-0">XL</button>                                    
+                                  </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Best brand  -->
+                        <div class="price mb-">
+                            <div class="card rounded-0 border border-0">
+                                <div class="card-body">
+                                    <img src="../public/images/banner/5.jpg" alt="" style="width: 100%;">
+
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <!-- Fin colonne de taille 4  -->
+        
+                    <!-- Colonne de taille 8  -->
+                    <div class="cartes col-md-9 px-3">
+                        <div id="fist-list-cart">
+                            <!-- Barre avec les mode d'affichage -->
+                            <div class="input-group mb-4 bg-body">
+                                <button class="input-group-text border border-0 bg-body" id=""><i class="bi bi-grid-3x2-gap-fill icone-active"></i></button>
+                                <button class="input-group-text border border-0 bg-body categorie-list" id=""><i class="bi bi-list-task"></i></i></button>
+                                <input type="text" class="form-control border border-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                <span class="input-group-text border border-0 bg-body text-body-secondary " id="inputGroup-sizing-default">Showing 01-09 of 17 Results</span>
+                            </div>
+    
+                            <!-- Les carte avec images  -->
+                            <!-- Premiere ligne  -->
+                            <div class="row mb-4">
+                                <!-- element 1  -->
+                                <div class="card-element  col-md-4">
+                                    <div class="card shadow rounded-0 border border-0">
+                                        <div class="card-body">
+                                            <img src="../public/images/product/6.jpg" alt="" style="width: 100%;">
+                                            <div class="top">
+                                                <button class="new">New</button>
+                                                <span class="element-price">$56.20</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <p class="fw-bold title">DUMMY PRODUCT NAME</p>
+                                                <p class="my-start">
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                </p>
+                                            </div>
+                                            <p class="bg-body-secondary py-2 px-3 text-center">
+                                                <span class="icone"><i class="bi bi-heart"></i></span>
+                                                <span class="icone"><i class="bi bi-search"></i></span>
+                                                <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                                <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                            </p>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- element 2  -->
+                                <div class="card-element col-md-4">
+                                    <div class="card shadow rounded-0 border border-0">
+                                        <div class="card-body">
+                                            <img src="../public/images/product/3.jpg" alt="" style="width: 100%;">
+                                            <div class="top">
+                                                <button class="sale">Sale</button>
+                                                <span class="element-price">$56.20</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <p class="fw-bold title">DUMMY PRODUCT NAME</p>
+                                                <p class="my-start">
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                </p>
+                                            </div>
+                                            <p class="bg-body-secondary py-2 px-3 text-center">
+                                                <span class="icone"><i class="bi bi-heart"></i></span>
+                                                <span class="icone"><i class="bi bi-search"></i></span>
+                                                <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                                <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                            </p>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- element 3  -->
+                                <div class="card-element  col-md-4">
+                                    <div class="card shadow rounded-0 border border-0">
+                                        <div class="card-body">
+                                            <img src="../public/images/product/7.jpg" alt="" style="width: 100%;">
+                                            <div class="top">
+                                                <!-- <button class="new">New</button> -->
+                                                <span class="prix element-price">$56.20</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <p class="fw-bold title">DUMMY PRODUCT NAME</p>
+                                                <p class="my-start">
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                </p>
+                                            </div>
+                                            <p class="bg-body-secondary py-2 px-3 text-center">
+                                                <span class="icone"><i class="bi bi-heart"></i></span>
+                                                <span class="icone"><i class="bi bi-search"></i></span>
+                                                <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                                <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                            </p>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Deuxieme ligne  -->
+                            <div class="row mb-4">
+                                <!-- element 1  -->
+                                <div class="card-element col-md-4">
+                                    <div class="card shadow rounded-0 border border-0">
+                                        <div class="card-body">
+                                            <img src="../public/images/product/10.jpg" alt="" style="width: 100%;">
+                                            <div class="top">
+                                                <button class="sale">Sale</button>
+                                                <span class="element-price">$56.20</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <p class="fw-bold title">DUMMY PRODUCT NAME</p>
+                                                <p class="my-start">
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                </p>
+                                            </div>
+                                            <p class="bg-body-secondary py-2 px-3 text-center">
+                                                <span class="icone"><i class="bi bi-heart"></i></span>
+                                                <span class="icone"><i class="bi bi-search"></i></span>
+                                                <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                                <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                            </p>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- element 2  -->
+                                <div class="card-element col-md-4">
+                                    <div class="card shadow rounded-0 border border-0">
+                                        <div class="card-body">
+                                            <img src="../public/images/product/8.jpg" alt="" style="width: 100%;">
+                                            <div class="top">
+                                                <!-- <button class="new">New</button> -->
+                                                <span class="prix element-price">$56.20</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <p class="fw-bold title">DUMMY PRODUCT NAME</p>
+                                                <p class="my-start">
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                </p>
+                                            </div>
+                                            <p class="bg-body-secondary py-2 px-3 text-center">
+                                                <span class="icone"><i class="bi bi-heart"></i></span>
+                                                <span class="icone"><i class="bi bi-search"></i></span>
+                                                <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                                <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                            </p>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- element 3  -->
+                                <div class="card-element col-md-4">
+                                    <div class="card shadow rounded-0 border border-0">
+                                        <div class="card-body">
+                                            <img src="../public/images/product/11.jpg" alt="" style="width: 100%;">
+                                            <div class="top">
+                                                <button class="new">New</button>
+                                                <span class="element-price">$56.20</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <p class="fw-bold title">DUMMY PRODUCT NAME</p>
+                                                <p class="my-start">
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                </p>
+                                            </div>
+                                            <p class="bg-body-secondary py-2 px-3 text-center">
+                                                <span class="icone"><i class="bi bi-heart"></i></span>
+                                                <span class="icone"><i class="bi bi-search"></i></span>
+                                                <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                                <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                            </p>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Troisieme ligne  -->
+                            <div class="row mb-4">
+                                <!-- element 1  -->
+                                <div class="card-element col-md-4">
+                                    <div class="card shadow rounded-0 border border-0">
+                                        <div class="card-body">
+                                            <img src="../public/images/product/2.jpg" alt="" style="width: 100%;">
+                                            <div class="top">
+                                                <button class="new">New</button>
+                                                <span class="element-price">$56.20</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <p class="fw-bold title">DUMMY PRODUCT NAME</p>
+                                                <p class="my-start">
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                </p>
+                                            </div>
+                                            <p class="bg-body-secondary py-2 px-3 text-center">
+                                                <span class="icone"><i class="bi bi-heart"></i></span>
+                                                <span class="icone"><i class="bi bi-search"></i></span>
+                                                <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                                <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                            </p>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- element 2  -->
+                                <div class="card-element col-md-4">
+                                    <div class="card shadow rounded-0 border border-0">
+                                        <div class="card-body">
+                                            <img src="../public/images/product/1.jpg" alt="" style="width: 100%;">
+                                            <div class="top">
+                                                <!-- <button class="new">New</button> -->
+                                                <span class="prix element-price">$56.20</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <p class="fw-bold title">DUMMY PRODUCT NAME</p>
+                                                <p class="my-start">
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                </p>
+                                            </div>
+                                            <p class="bg-body-secondary py-2 px-3 text-center">
+                                                <span class="icone"><i class="bi bi-heart"></i></span>
+                                                <span class="icone"><i class="bi bi-search"></i></span>
+                                                <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                                <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                            </p>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- element 3  -->
+                                <div class="card-element col-md-4">
+                                    <div class="card shadow rounded-0 border border-0">
+                                        <div class="card-body">
+                                            <img src="../public/images/product/12.jpg" alt="" style="width: 100%;">
+                                            <div class="top">
+                                                <button class="new">New</button>
+                                                <span class="element-price">$56.20</span>
+                                            </div>
+                                            <div class="text-center">
+                                                <p class="fw-bold title">DUMMY PRODUCT NAME</p>
+                                                <p class="my-start">
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                    <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                                </p>
+                                            </div>
+                                            <p class="bg-body-secondary py-2 px-3 text-center">
+                                                <span class="icone"><i class="bi bi-heart"></i></span>
+                                                <span class="icone"><i class="bi bi-search"></i></span>
+                                                <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                                <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                            </p>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div id="second-list-cart">
+                            <!-- Barre avec les mode d'affichage -->
+                            <div class="input-group mb-4 bg-body">
+                                <button class="input-group-text border border-0 bg-body categorie-blok" id=""><i class="bi bi-grid-3x2-gap-fill"></i></button>
+                                <button class="input-group-text border border-0 bg-body " id=""><i class="bi bi-list-task icone-active"></i></i></button>
+                                <input type="text" class="form-control border border-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                <span class="input-group-text border border-0 bg-body text-body-secondary " id="inputGroup-sizing-default">Showing 01-09 of 17 Results</span>
+                            </div>
+                            <!-- Carte affichage liste  -->
+                            <!-- Carte 1 -->
+                            <div class="row g-0 bg-body position-relative mb-4 ">
+                                <div class="col-md-4 mb-md-0 p-md-4">
+                                    <img src="../public/images/product/1.jpg"  alt="..." style="width: 100%;">
+                                    <div class="top">
+                                        <button class="new">New</button>
+                                        <span class="element-price">$56.20</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 px-4 py-4 ps-md-0">
+                                    
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="mt-0 fw-bold">DUMMY PRODUCT NAME</h5>
+                                        <p>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                            <span>(27 Raiting)</span>
+                                        </p>
+                                    </div>
+                                    <p class="element-price">$56.20</p>
+                                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
+                                    <div class="icone-part d-flex">
+                                        <p class="bg-body-secondary py-2 px-3 text-center me-3">
+                                            <button class="icone">+</button>
+                                            <button class="icone">02</button>
+                                            <button class="icone border border-0">-</button>
+                                        </p>
+                                        <p class="bg-body-secondary py-2 px-3 text-center ">
+                                            <span class="icone"><i class="bi bi-heart"></i></span>
+                                            <span class="icone"><i class="bi bi-search"></i></span>
+                                            <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                            <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                        </p>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+
+                            <!-- Carte 2 -->
+                            <div class="row g-0 bg-body position-relative mb-4">
+                                <div class="col-md-4 mb-md-0 p-md-4">
+                                    <img src="../public/images/product/3.jpg"  alt="..." style="width: 100%;">
+                                    <div class="top">
+                                        <button class="new">New</button>
+                                        <span class="element-price">$56.20</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 px-4 py-4 ps-md-0">
+                                    
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="mt-0 fw-bold">DUMMY PRODUCT NAME</h5>
+                                        <p>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                            <span>(27 Raiting)</span>
+                                        </p>
+                                    </div>
+                                    <p class="element-price">$56.20</p>
+                                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
+                                    <div class="icone-part d-flex">
+                                        <p class="bg-body-secondary py-2 px-3 text-center me-3">
+                                            <button class="icone">+</button>
+                                            <button class="icone">02</button>
+                                            <button class="icone border border-0">-</button>
+                                        </p>
+                                        <p class="bg-body-secondary py-2 px-3 text-center ">
+                                            <span class="icone"><i class="bi bi-heart"></i></span>
+                                            <span class="icone"><i class="bi bi-search"></i></span>
+                                            <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                            <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                        </p>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+
+                            <!-- Carte 3 -->
+                            <div class="row g-0 bg-body position-relative mb-4">
+                                <div class="col-md-4 mb-md-0 p-md-4">
+                                    <img src="../public/images/product/2.jpg"  alt="..." style="width: 100%;">
+                                    <div class="top">
+                                        <button class="new">New</button>
+                                        <span class="element-price">$56.20</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 px-4 py-4 ps-md-0">
+                                    
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="mt-0 fw-bold">DUMMY PRODUCT NAME</h5>
+                                        <p>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                            <span>(27 Raiting)</span>
+                                        </p>
+                                    </div>
+                                    <p class="element-price">$56.20</p>
+                                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
+                                    <div class="icone-part d-flex">
+                                        <p class="bg-body-secondary py-2 px-3 text-center me-3">
+                                            <button class="icone">+</button>
+                                            <button class="icone">02</button>
+                                            <button class="icone border border-0">-</button>
+                                        </p>
+                                        <p class="bg-body-secondary py-2 px-3 text-center ">
+                                            <span class="icone"><i class="bi bi-heart"></i></span>
+                                            <span class="icone"><i class="bi bi-search"></i></span>
+                                            <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                            <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                        </p>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+
+                            <!-- Carte 4 -->
+                            <div class="row g-0 bg-body position-relative mb-4">
+                                <div class="col-md-4 mb-md-0 p-md-4">
+                                    <img src="../public/images/product/10.jpg"  alt="..." style="width: 100%;">
+                                    <div class="top">
+                                        <button class="new">New</button>
+                                        <span class="element-price">$56.20</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 px-4 py-4 ps-md-0">
+                                    
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="mt-0 fw-bold">DUMMY PRODUCT NAME</h5>
+                                        <p>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                            <span>(27 Raiting)</span>
+                                        </p>
+                                    </div>
+                                    <p> 
+                                        <span class="element-price">$56.20</span>
+                                        <span class="ms-3 text-decoration-line-through text-body-secondary">$96.20</span>
+                                    </p>
+                                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
+                                    <div class="icone-part d-flex">
+                                        <p class="bg-body-secondary py-2 px-3 text-center me-3">
+                                            <button class="icone">+</button>
+                                            <button class="icone">02</button>
+                                            <button class="icone border border-0">-</button>
+                                        </p>
+                                        <p class="bg-body-secondary py-2 px-3 text-center ">
+                                            <span class="icone"><i class="bi bi-heart"></i></span>
+                                            <span class="icone"><i class="bi bi-search"></i></span>
+                                            <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                            <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                        </p>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+
+                            <!-- Carte 5 -->
+                            <div class="row g-0 bg-body position-relative mb-4">
+                                <div class="col-md-4 mb-md-0 p-md-4">
+                                    <img src="../public/images/product/12.jpg"  alt="..." style="width: 100%;">
+                                    <div class="top">
+                                        <button class="new">New</button>
+                                        <span class="element-price">$56.20</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 px-4 py-4 ps-md-0">
+                                    
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="mt-0 fw-bold">DUMMY PRODUCT NAME</h5>
+                                        <p>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-fill"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                            <span class="star-icone"><i class="bi bi-star-half"></i></span>
+                                            <span>(27 Raiting)</span>
+                                        </p>
+                                    </div>
+                                    <p class="element-price">$56.20</p>
+                                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
+                                    <div class="icone-part d-flex">
+                                        <p class="bg-body-secondary py-2 px-3 text-center me-3">
+                                            <button class="icone">+</button>
+                                            <button class="icone">02</button>
+                                            <button class="icone border border-0">-</button>
+                                        </p>
+                                        <p class="bg-body-secondary py-2 px-3 text-center ">
+                                            <span class="icone"><i class="bi bi-heart"></i></span>
+                                            <span class="icone"><i class="bi bi-search"></i></span>
+                                            <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                            <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                        </p>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                            
+
+                        </div>
+
+                        
+                        <p class="page-cartes text-center bg-body py-3">
+                            <a href="#"><i class="bi bi-arrow-left"></i></a>
+                            <a href="#">01</a>
+                            <a href="#">02</a>
+                            <a href="#">03</a>
+                            <a href="#">04</a>
+                            <a href="#">05</a>
+                            <a href="#"><i class="bi bi-arrow-right"></i></a>
+                        </p>
+                    
+                    </div>
+                    <!-- Fin colonne de taille 8  -->
+                </div>
+            </div>
+    
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="container-footer">
+            <div class="main-footer  px-5 pt-5">
+                <div class="element-main-footer">
+                    <h3>CONTACT US</h3>
+                    <span class="decoration"></span>
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Adresse : </p>
+    
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">28 Green Tower, Street Name, New York City, USA</p>
+    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Cell-Phone :</p>
+    
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">012345 - 123456789</p>
+    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Email : </p>
+    
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">your-email@gmail.com</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="element-main-footer">
+                    <h4>ACCOUNTS</h4>
+                    <span class="decoration"></span>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Account</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Wishlist</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Cart</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Sign In</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Check out</a>
+                </div>
+                <div class="element-main-footer">
+                    <h4>SHIPPING</h4>
+                    <span class="decoration"></span>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Account</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Wishlist</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Cart</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Sign In</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Check out</a>
+                </div>
+                <div class="element-main-footer">
+                    <h4>EMAIL NEWSLETTERS</h4>
+                    <span class="decoration"></span>
+                    <form action="" class="">
+                        <div class="email">
+                            <input type="email" class="" id="inputEmail" placeholder="Email/Address">
+                        </div>
+                        <div class="subscribe">
+                            <button class="d-block mt-2">SUBSCRIBE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright  px-5 py-2">
+                <div class="element-copyright mt-3">
+                    <p>© CodeCarnival 2022. All Rights Reserved.</p>
+                </div>
+                <div class="element-copyright mt-3">
+                    <img src="../public/images/payment/1.png" alt="">
+                    <img src="../public/images/payment/2.png" alt="">
+                    <img src="../public/images/payment/3.png" alt="">
+                    <img src="../public/images/payment/4.png" alt="">
+    
+                </div>
+    
+            </div>
+        </div>
+    
+    </footer>
+   
+    <script>
+        // scroll
+            let calcScrollValue = () => {
+                let scrollProgress = document.getElementById('progress');
+                let scrolProgressValue = document.getElementById('progressValue');
+
+                let pos = document.documentElement.scrollTop;
+                let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                let scrollValue = Math.round((pos * 100) / calcHeight)
+                if (pos > 10) {
+                    scrollProgress.style.display = 'grid';
+                } else {
+                    scrollProgress.style.display = 'none';
+                }
+
+                scrollProgress.addEventListener('click', () => {
+                    document.documentElement.scrollTop = 0;
+                })
+
+                scrollProgress.style.background = `conic-gradient( #C8A165 ${scrollValue}%, white ${scrollValue}%)`;
+            }
+
+            // Ajouter un seul gestionnaire d'événements
+            window.addEventListener('scroll', () => {
+                // navBarFixed();
+                calcScrollValue();
+            });
+
+            // Exécutez les fonctions une fois au chargement de la page
+            window.addEventListener('load', () => {
+                // navBarFixed();
+                calcScrollValue();
+            });
+
+            //menu
+            let menuTogler = document.querySelector('.menuTogler');
+            let menuToglerIcon = document.querySelector('.menuTogler i');
+            let dropDownMenu = document.querySelector('.dropDownMenu');
+
+            menuTogler.onclick = function () {
+                dropDownMenu.classList.toggle('open');
+                let isOpen = dropDownMenu.classList.contains('open');
+
+                menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
+            }
+    </script>
+    <!-- Script pour faire apparaitre le menu en liste ou en block  -->
+    <script>
+        // Affichage en liste 
+        list = document.querySelector(".categorie-list");
+
+        // Affichage en block 
+        block = document.querySelector(".categorie-blok");
+
+        first = document.getElementById("fist-list-cart");
+        second = document.getElementById("second-list-cart");
+        
+        // Affichage en liste
+        block.addEventListener('click' ,()=>{
+            first.style.display='block';
+            second.style.display='none';
+        })
+
+        // Affichage en block
+        list.addEventListener('click' ,()=>{
+            second.style.display='block';
+            first.style.display='none';
+        })
+
+        // block.onclick = function(){
+        //     console.log("Seclectionner");
+        //     // alert("Bonjour")
+        //     menu1 = document.querySelector(".fist-list-cart");
+        //     menu1.classList.add("fist-list-cart-active"); 
+        // }
+
+        list.onclick = function(){
+            menu2 = document.querySelector(".second-list-cart");
+            menu2.classList.add("second-list-cart-active");
+            alert("Selectionner") 
+        }
+//         hamburger.onclick = function(){
+//             navBar = document.querySelector(".nav-bar");
+//             navBar.classList.toggle("active");           
+
+//             banierre = document.querySelector(".banierre")
+//             banierre.classList.toggle("active");
+// }
+    </script>
+</body>
+
+</html>
