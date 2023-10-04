@@ -2,8 +2,8 @@
 .H-contact{
             position: relative;
             color: white;
-            top: -10vh;
-            left: 20vh;
+            margin-top: -10vh;
+            margin-left: 20vh;
             font-size: 1vh;
 }
 .form {
