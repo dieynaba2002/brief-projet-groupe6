@@ -36,12 +36,11 @@ main{
     /* margin-top: -6.5vh; */
 }
 
+
+/* Colonne de taille 4  */
+/* Debut categorie  */
 .categories p,li{
     font-size: 18px;
-}
-
-.price p{
-    font-size: 16px;    
 }
 
 .categories .title{
@@ -61,8 +60,15 @@ main{
 .categories li a{
     color: gray;
 }
+/* Fin categories  */
 
+/* Debut price  */
+.price p{
+    font-size: 16px;    
+}
+/* Fin price  */
 
+/* Debut color  */
 .color ul li{
     font-size: 16px;
     margin-bottom: 1vh;
@@ -105,91 +111,169 @@ main{
     background-color: #C38B4B;
     color: #C38B4B;
 }
+/* Fin color  */
 
-
+/* Debut size  */
 .size .card-body button{
     font-size: 16px;
-    width: 5vh;
+    width: 6vh;
     margin: 1vh 0;
-    /* padding:0 4vh; */
-
-    /* padding: 2vh 0; */
-    /* margin:0 1vh; */
 }
+/* Fin size  */
+/* Fin colonne de taille 4  */
 
+
+/* Debut colonne de taille 8  */
+/* Debut cartes pour les deux types de dispositions  */
 .icone-active{
     color: var(--text-color-hover);
 }
 
-.categories .star-icone{
+.star-icone{
     color: var(--deco-color);
 }
 
-.card-element .my-start{
-    margin-top: -1.2vh;
-
-}
-
-#fist-list-cart .icone{
-    border-right: 2px solid gray;
-    padding: 0 1.2vh;
-}
-#second-list-cart .icone{
-    border-right: 2px solid gray;
-    padding: 0 2vh;
-}
-
-.card-element .title{
-    margin-top: -5vh;
-}
-
-.card-element .title-prix{
-    margin-top: 3px;
-}
-
-.categories .top{
-    display: flex;
-    justify-content: space-between;
+/* Image des cartes  */
+.image-categorie{
+    height: 34vh;
+    width: 100%;
     padding: 2vh;
-    position: relative;
-    top: -35vh;
+    margin-bottom: 7vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.categories .top button{
+
+.image-categorie button{
     border: none;
     color: white;
     width: 50px;
     border-radius: 4px;
 }
 
-.categories .top .new{
+.image-categorie .new{
     background-color: var(--text-color-hover);
 
 }
 
-.categories .top .sale{
+.image-categorie .sale{
     background-color: var(--deco-color);
 }
 
-.top .prix{
-    margin-left: 23vh;
+
+.image-categorie .element-price{
+    color: var(--deco-color);
+    float: right;
 }
 
+/* ligne 1 */
+.image1{
+    background-image: url("../images/product/6.jpg");
+}
+.image2{
+    background-image: url("../images/product/3.jpg");
+}
+.image3{
+    background-image: url("../images/product/7.jpg");
+}
+
+/* ligne 2  */
+.image4{
+    background-image: url("../images/product/10.jpg");
+}
+.image5{
+    background-image: url("../images/product/8.jpg");
+}
+.image6{
+    background-image: url("../images/product/11.jpg");
+}
+
+
+/* ligne 3  */
+.image7{
+    background-image: url("../images/product/2.jpg");
+}
+.image8{
+    background-image: url("../images/product/1.jpg");
+}
+.image9{
+    background-image: url("../images/product/12.jpg");
+}
+
+/* Barre de pagination  */
 .page-cartes a{
     color: gray;
     
 }
+/* Fin cartes pour les deux types de dispositions  */
 
-.categories .element-price{
+/* Premier type de liste (en block) */
+#fist-list-cart .card-element .my-start{
+    margin-top: -1.2vh;
+
+}
+
+#fist-list-cart .card-element .title{
+    margin-top: -5vh;
+}
+
+#fist-list-cart .card-element .title-prix{
+    margin-top: 3px;
+}
+
+#fist-list-cart .icone{
+    border-right: 2px solid gray;
+    padding: 0 1.2vh;
+}
+
+
+
+/* Deuxieme type de liste (en liste) */ 
+#second-list-cart .icone{
+    border-right: 2px solid gray;
+    padding: 0 2vh;
+}
+
+#second-list-cart .element-price{
     color: var(--deco-color);
 }
 
-/* Debut dexieme liste  */
-.categories button{
+.categories-container button{
     border: none;
     background-color: #E9ECEF;
 }
 
+#second-list-cart .text-element{
+    margin-bottom: 4.3vh;
+}
+
 #second-list-cart{
+    display: none;
+}
+
+/* Fin colonne de taille 8  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Debut dexieme liste  */
+
+
+/* Filtrer les produits selon la categories  */
+.hide{
+    display: none;
+}
+
+.show{
     display: none;
 }
 

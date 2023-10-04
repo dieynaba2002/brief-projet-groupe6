@@ -72,7 +72,7 @@
     </section>
     <h6 class="text-center titre">SHOPPING CART</h6>
 
-    <p class="link-home"> <a href="">HOME </a> / PRODUCT LIST VIEW</p>
+    <p class="link-home"> <a href="#">HOME </a> / PRODUCT LIST VIEW</p>
 
     <!-- Main -->
     <main>
@@ -80,7 +80,7 @@
         <div class="fist-list">
             <div class="container">
                 <!-- Division de la zone principale en 2 colonnes  -->
-                <div class="categories row">
+                <div class="categories-container row">
                     <!-- Colonne de taille 4  -->
                     <div class="col-md-3 px-3 mb-4">
                         <!-- search  -->
@@ -100,11 +100,11 @@
                                     <p> <a href="#">Chair</a></p>
                                     <p class="title"> <a href="#" class="fourniture">Fourniture</a></p>
                                     <ul class="title">
-                                        <li> <a href="#">Men Bag</a></li>
-                                        <li> <a href="#">Shoes</a></li>
-                                        <li> <a href="#">Watch</a></li>
-                                        <li> <a href="#">T-Shirt</a></li>
-                                        <li> <a href="#">Shirt</a></li>
+                                        <li> <button class="bag">Bag</button></li>
+                                        <li> <button class="shoes">Shoes</button></li>
+                                        <li> <button class="watch">Watch</button></li>
+                                        <li> <button class="tshirt">T-Shirt</button></li>
+                                        <li> <button class="shirt">Shirt</button></li>
                                     </ul>
                                     <p class="title"> <a href="#">Accessoires</a></p>
                                     <p class="title"> <a href="#">Top Brands</a></p>
@@ -155,11 +155,11 @@
 
                         <!-- size  -->
                         <div class="size mb-3">
-                            <div class="card text-center rounded-0 border border-0">
+                            <div class="card rounded-0 border border-0">
                                 <div class="card-header bg-body">
                                   <h5>SIZE</h5>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body text-center">
                                   <blockquote class="blockquote mb-0">
                                     <button class="py-2 border border-0">M</button>
                                     <button class="py-2 border border-0">S</button>
@@ -202,11 +202,11 @@
                                 <div class="card-element  col-md-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
-                                            <img src="../public/images/product/6.jpg" alt="" style="width: 100%;">
-                                            <div class="top">
+                                            <div class="image-categorie image1">
                                                 <button class="new">New</button>
                                                 <span class="element-price">$56.20</span>
                                             </div>
+                                            
                                             <div class="text-center">
                                                 <p class="fw-bold title">DUMMY PRODUCT NAME</p>
                                                 <p class="my-start">
@@ -232,8 +232,7 @@
                                 <div class="card-element col-md-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
-                                            <img src="../public/images/product/3.jpg" alt="" style="width: 100%;">
-                                            <div class="top">
+                                            <div class="image-categorie image2">
                                                 <button class="sale">Sale</button>
                                                 <span class="element-price">$56.20</span>
                                             </div>
@@ -262,9 +261,7 @@
                                 <div class="card-element  col-md-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
-                                            <img src="../public/images/product/7.jpg" alt="" style="width: 100%;">
-                                            <div class="top">
-                                                <!-- <button class="new">New</button> -->
+                                            <div class="image-categorie image3">
                                                 <span class="prix element-price">$56.20</span>
                                             </div>
                                             <div class="text-center">
@@ -295,8 +292,7 @@
                                 <div class="card-element col-md-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
-                                            <img src="../public/images/product/10.jpg" alt="" style="width: 100%;">
-                                            <div class="top">
+                                            <div class="image-categorie image4">
                                                 <button class="sale">Sale</button>
                                                 <span class="element-price">$56.20</span>
                                             </div>
@@ -325,9 +321,7 @@
                                 <div class="card-element col-md-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
-                                            <img src="../public/images/product/8.jpg" alt="" style="width: 100%;">
-                                            <div class="top">
-                                                <!-- <button class="new">New</button> -->
+                                            <div class="image-categorie image5">
                                                 <span class="prix element-price">$56.20</span>
                                             </div>
                                             <div class="text-center">
@@ -355,8 +349,7 @@
                                 <div class="card-element col-md-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
-                                            <img src="../public/images/product/11.jpg" alt="" style="width: 100%;">
-                                            <div class="top">
+                                            <div class="image-categorie image6">
                                                 <button class="new">New</button>
                                                 <span class="element-price">$56.20</span>
                                             </div>
@@ -388,8 +381,7 @@
                                 <div class="card-element col-md-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
-                                            <img src="../public/images/product/2.jpg" alt="" style="width: 100%;">
-                                            <div class="top">
+                                            <div class="image-categorie image7">
                                                 <button class="new">New</button>
                                                 <span class="element-price">$56.20</span>
                                             </div>
@@ -418,9 +410,7 @@
                                 <div class="card-element col-md-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
-                                            <img src="../public/images/product/1.jpg" alt="" style="width: 100%;">
-                                            <div class="top">
-                                                <!-- <button class="new">New</button> -->
+                                            <div class="image-categorie image8">
                                                 <span class="prix element-price">$56.20</span>
                                             </div>
                                             <div class="text-center">
@@ -448,8 +438,7 @@
                                 <div class="card-element col-md-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
-                                            <img src="../public/images/product/12.jpg" alt="" style="width: 100%;">
-                                            <div class="top">
+                                            <div class="image-categorie image9">
                                                 <button class="new">New</button>
                                                 <span class="element-price">$56.20</span>
                                             </div>
@@ -489,8 +478,7 @@
                             <!-- Carte 1 -->
                             <div class="row g-0 bg-body position-relative mb-4 ">
                                 <div class="col-md-4 mb-md-0 p-md-4">
-                                    <img src="../public/images/product/1.jpg"  alt="..." style="width: 100%;">
-                                    <div class="top">
+                                    <div class="image-categorie image8">
                                         <button class="new">New</button>
                                         <span class="element-price">$56.20</span>
                                     </div>
@@ -509,7 +497,7 @@
                                         </p>
                                     </div>
                                     <p class="element-price">$56.20</p>
-                                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
+                                    <p class="text-element">Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
                                     <div class="icone-part d-flex">
                                         <p class="bg-body-secondary py-2 px-3 text-center me-3">
                                             <button class="icone">+</button>
@@ -530,11 +518,11 @@
                             <!-- Carte 2 -->
                             <div class="row g-0 bg-body position-relative mb-4">
                                 <div class="col-md-4 mb-md-0 p-md-4">
-                                    <img src="../public/images/product/3.jpg"  alt="..." style="width: 100%;">
-                                    <div class="top">
+                                    <div class="image-categorie image2">
                                         <button class="new">New</button>
                                         <span class="element-price">$56.20</span>
                                     </div>
+                                    
                                 </div>
                                 <div class="col-md-8 px-4 py-4 ps-md-0">
                                     
@@ -550,7 +538,7 @@
                                         </p>
                                     </div>
                                     <p class="element-price">$56.20</p>
-                                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
+                                    <p class="text-element">Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
                                     <div class="icone-part d-flex">
                                         <p class="bg-body-secondary py-2 px-3 text-center me-3">
                                             <button class="icone">+</button>
@@ -571,11 +559,11 @@
                             <!-- Carte 3 -->
                             <div class="row g-0 bg-body position-relative mb-4">
                                 <div class="col-md-4 mb-md-0 p-md-4">
-                                    <img src="../public/images/product/2.jpg"  alt="..." style="width: 100%;">
-                                    <div class="top">
+                                    <div class="image-categorie image7">
                                         <button class="new">New</button>
                                         <span class="element-price">$56.20</span>
                                     </div>
+                                    
                                 </div>
                                 <div class="col-md-8 px-4 py-4 ps-md-0">
                                     
@@ -591,7 +579,7 @@
                                         </p>
                                     </div>
                                     <p class="element-price">$56.20</p>
-                                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
+                                    <p class="text-element">Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
                                     <div class="icone-part d-flex">
                                         <p class="bg-body-secondary py-2 px-3 text-center me-3">
                                             <button class="icone">+</button>
@@ -612,8 +600,7 @@
                             <!-- Carte 4 -->
                             <div class="row g-0 bg-body position-relative mb-4">
                                 <div class="col-md-4 mb-md-0 p-md-4">
-                                    <img src="../public/images/product/10.jpg"  alt="..." style="width: 100%;">
-                                    <div class="top">
+                                    <div class="image-categorie image4">
                                         <button class="new">New</button>
                                         <span class="element-price">$56.20</span>
                                     </div>
@@ -635,7 +622,7 @@
                                         <span class="element-price">$56.20</span>
                                         <span class="ms-3 text-decoration-line-through text-body-secondary">$96.20</span>
                                     </p>
-                                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
+                                    <p class="text-element">Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
                                     <div class="icone-part d-flex">
                                         <p class="bg-body-secondary py-2 px-3 text-center me-3">
                                             <button class="icone">+</button>
@@ -656,11 +643,11 @@
                             <!-- Carte 5 -->
                             <div class="row g-0 bg-body position-relative mb-4">
                                 <div class="col-md-4 mb-md-0 p-md-4">
-                                    <img src="../public/images/product/12.jpg"  alt="..." style="width: 100%;">
-                                    <div class="top">
+                                    <div class="image-categorie image9">
                                         <button class="new">New</button>
                                         <span class="element-price">$56.20</span>
                                     </div>
+                                    
                                 </div>
                                 <div class="col-md-8 px-4 py-4 ps-md-0">
                                     
@@ -676,7 +663,7 @@
                                         </p>
                                     </div>
                                     <p class="element-price">$56.20</p>
-                                    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
+                                    <p class="text-element">Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here .</p>
                                     <div class="icone-part d-flex">
                                         <p class="bg-body-secondary py-2 px-3 text-center me-3">
                                             <button class="icone">+</button>
