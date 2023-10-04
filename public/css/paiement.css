@@ -30,6 +30,7 @@
     color: white;
 }
 
+
 main{
     width: 100%;
     background-color: var(--copyright-color);
@@ -46,11 +47,18 @@ main{
     width: 100%;
     border: none;
     background-color: white;
+}
+
+.first-container button a{
     color: black
+
 }
 
 .first-container button:hover{
     background-color: var(--text-color-hover);
+}
+
+.first-container button a:hover{
     color: white;
 }
 
