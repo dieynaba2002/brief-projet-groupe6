@@ -112,6 +112,19 @@ justify-content: space-between;
     color: grey;
    
 }
+.danger:hover{
+    font-size: 25px;
+    color: var(--blanc);
+    background-color: red;
+    border-radius: 10px;
+}
+.validate-panier:hover{
+    font-size: 25px;
+    color: var(--blanc);
+    background-color: green;
+    border-radius: 10px;
+
+}
 #margin-bootom-para-panier{
     line-height: 3px;
 
