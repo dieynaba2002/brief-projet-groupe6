@@ -135,16 +135,12 @@
     width: 90%;
     display: grid;
     grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
-    /* border: 2px solid #b14949; */
     margin: 0 auto;
     gap: 8px;
 }
-.grid-produit{
-    /* border: 3px solid #099240; */
-}
+
 .text-left{
     font-size: 1.2em;
-    /* padding: 10px; */
     display: inline-block;
 }
 .text-right{
@@ -154,7 +150,7 @@
     margin-left: 2.3vh;
 }
 .icone-star{
-    margin-left: 28vh;
+    margin-left: 20vh;
     color: #b14949;
 }
 .price{
@@ -260,9 +256,7 @@
 }
 .contain-date{
     display: flex;
-    /* border: 2px solid; */
     padding: 4px;
-    /* justify-content: space-between; */
     height: 50px;
 }
 .date-left{
@@ -342,7 +336,7 @@
 }
 
 /* Media querie */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     
     .grid-contain-slide{
         /* margin-top: -35px; */
@@ -356,16 +350,279 @@
         margin: 0 auto;
         
     }
+    .contain-description {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 50%;
+        padding: 5px;
+        color: var(--text-color);
+    }
     .col1{
-    
-        /* border: solid black; */
         display: grid;
         grid-template-rows: 58% 39%;
         gap: 10px;
         height: 365px;
     }
 
-    .grid-contain-slide{
-        margin-top: 100px;
+    .slider-section{
+        margin-top: 330px;
     }
+
+    .circle-princing {
+        background-color: var(--main-color);
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+    }
+
+    .circle-princing p {
+        color: white;
+        margin-left: 25px;
+
+    }
+
+    .sale {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .prix {
+        margin-top: 10px;
+    }
+
+    .trait-circle {
+        background-color: white;
+        width: 30%;
+        height: 1px;
+        display: block;
+        margin: -8px auto;
+    }
+    .para-discount {
+        color: var(--text-color);
+        text-align: justify;
+    }
+
+    .btn-buy {
+        padding: 1vh 4vh;
+        background-color: var(--main-color);
+        border: none;
+        color: white;
+        width: 50%;
+    }
+    .contain-description {
+        position: absolute;
+        top: 80px;
+        right: 60px;
+        width: 50%;
+        padding: 5px;
+        color: var(--text-color);
+    }
+    .grid-contain-feature{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* border: 2px solid #b14949; */
+        margin: 0 auto;
+        gap: 8px;
+    }  
+    .text-left {
+        font-size: 1.2em;
+        display: inline-block;
+    }
+
+    .text-right {
+        font-size: 1em;
+        padding: 10px;
+        display: inline-block;
+        margin-left: 2.3vh;
+    }
+    
+    .icone-star {
+        margin-left: 19vh;
+        color: #b14949;
+    }
+
+    .price {
+        color: #b14949;
+    }
+    .text-left-produit {
+        padding: 15px;
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    .text-right-produit {
+        margin-left: 4px; 
+    }
+
+    .etoile {
+        margin-left: 100px;
+        color: var(--main-color);
+    }
+    .contain-newsletter input {
+        width: 80%;
+        border-style: none none solid none;
+        border-bottom-width: 1px;
+        border-color: var(--main-color);
+    }
+    .contain-newsletter button {
+        border: none;
+        background-color: var(--main-color);
+        width: 55%;
+        height: 40px;
+        color: white;
+        margin: -10px 5px;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 990px){
+    .grid-contain-slide {
+            /* margin-top: -35px; */
+            display: grid;
+            /* border: 2px solid red; */
+            width: 100%;
+            grid-template-columns: 2fr;
+            gap: 15px;
+            padding: 10px;
+            height: 400px;
+            margin: 0 auto;
+
+        }
+
+        .col1 {
+            display: grid;
+            grid-template-rows: 58% 39%;
+            gap: 10px;
+            height: 365px;
+        }
+
+        .slider-section {
+            margin-top: 330px;
+        }
+
+        .circle-princing {
+            background-color: var(--main-color);
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        .circle-princing p {
+            color: white;
+            margin-left: 25px;
+
+        }
+
+        .sale {
+            margin-top: 15px;
+            font-size: 15px;
+        }
+
+        .prix {
+            margin-top: 10px;
+        }
+
+        .trait-circle {
+            background-color: white;
+            width: 30%;
+            height: 1px;
+            display: block;
+            margin: -8px auto;
+        }
+
+        .para-discount {
+            color: var(--text-color);
+            text-align: justify;
+        }
+
+        .btn-buy {
+            padding: 1vh 4vh;
+            background-color: var(--main-color);
+            border: none;
+            color: white;
+            width: 50%;
+        }
+
+        .contain-description {
+            position: absolute;
+            top: 80px;
+            right: 60px;
+            width: 50%;
+            padding: 5px;
+            color: var(--text-color);
+        }
+
+        .grid-contain-feature {
+            width: 90%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* border: 2px solid #b14949; */
+            margin: 0 auto;
+            gap: 8px;
+        }
+
+        .text-left {
+            font-size: 1.2em;
+            display: inline-block;
+        }
+
+        .text-right {
+            font-size: 1em;
+            padding: 10px;
+            display: inline-block;
+            margin-left: 2.3vh;
+        }
+
+        .icone-star {
+            margin-left: 18vh;
+            color: #b14949;
+        }
+
+        .price {
+            color: #b14949;
+        }
+
+        .text-left-produit {
+            padding: 15px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .text-right-produit {
+            margin-left: 4px;
+        }
+
+        .etoile {
+            margin-left: 100px;
+            color: var(--main-color);
+        }
+
+        .contain-newsletter input {
+            width: 80%;
+            border-style: none none solid none;
+            border-bottom-width: 1px;
+            border-color: var(--main-color);
+        }
+
+        .contain-newsletter button {
+            border: none;
+            background-color: var(--main-color);
+            width: 55%;
+            height: 40px;
+            color: white;
+            margin: -10px 5px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        
 }
