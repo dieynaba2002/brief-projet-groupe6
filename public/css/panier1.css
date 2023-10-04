@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    /* background-color: var(--gris); */
+
+}
+/* ********Definition de nos couleur de bases************ */
+:root{
+    --blanc:#FFFFFF;
+    --marron:#C87065;
+    --gris:#F6F6F6;
+    --jaune:#C8A266;
+}
+/* ********Design de notre section************ */
+
+body{
+    background-color: var(--gris);
+
+}
+.grid-container-row{
+    display: block;
+    
+}
+/* ********Header panier************ */
+.header-content-panier{
+display: flex;
+justify-content: space-between;
+/* justify-items: center; */
+
+}
+.content-content-panier1{
+    display: flex;
+    justify-content: center;
+    background-color: var(--blanc);
+    width: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+
+.content-content-panier1:hover{
+    background-color: var(--jaune);
+    border: 3px solid var(--blanc);
+    transition: 1s;
+    scale: 1.1; 
+}
+.content-content-panier1 a{
+    text-decoration: none;
+    color: grey;
+}
+.content-content-panier1 a:hover{
+    color: var(--blanc);
+}
+#content-content-panier1:hover{
+    background-color: var(--blanc);
+    border: 3px solid var(--jaune);
+    transition: 1s;
+    scale: 1.1; 
+    
+    
+
+}
+#content-content-panier1 a:hover {
+    color: var(--jaune);
+}
+#content-content-panier1{
+    background-color: var(--jaune);
+    
+}
+#content-content-panier1 a{
+    color: var(--blanc);
+
+}
+
+
+/* ******Cardcontent********* */
+.background-blanc-panier{
+    background-color: var(--blanc);
+}
+
+.content-card-img1-panier{
+    display: flex;
+    justify-content: space-between;
+
+   
+    
+}
+.icons-content-panier-midle{
+    display: flex;
+    justify-content: center;
+}
+.content-container-icon-panier p{
+    background-color: grey;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
