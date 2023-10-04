@@ -1,0 +1,81 @@
+:root {
+    --copyright-color: #F6F6F6;
+    --main-footer-color : #EEEEEE;
+    --text-color: #666666;
+    --text-color-hover: #c8A165;
+    --deco-color: #C87065;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: red;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+
+.link-home{
+    position: relative;
+    margin-top: -15vh;
+    padding-bottom: 2.5vh;
+    color:white;
+    margin-left: 2vh;
+    font-weight: bold;
+}
+
+.link-home a{
+    color: white;
+}
+
+main{
+    width: 100%;
+    background-color: var(--copyright-color);
+    padding: 10vh 0;
+    /* margin-top: 2vh; */
+    /* margin-top: -6.5vh; */
+}
+
+.first-container .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.first-container button{
+    width: 100%;
+    border: none;
+    background-color: white;
+    color: black
+}
+
+.first-container button:hover{
+    background-color: var(--text-color-hover);
+    color: white;
+}
+
+.first-container .checkout{
+    background-color: var(--text-color-hover);
+    color: white;
+}
+
+.middle-container .container{
+    background-color: white;
+}
+
+.middle-container .container .place-order{
+    background-color: var(--deco-color);
+    color: white;
+}
+
+.middle-container .container .place-order:hover{
+    background-color: var(--text-color-hover);
+}
+
+.middle-container .container .soulignement{
+    width: 10vh;
+    height: 0.4vh;
+    display: block;
+    margin: 5px 0 40px;
+    background-color: #C87065;
+}

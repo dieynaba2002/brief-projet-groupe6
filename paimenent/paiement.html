@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../public/css/paiement.css">
+    <title>Paiement</title>
+</head>
+
+<body>
+    <div id="progress">
+        <span id="progressValue">&#x1F815</span>
+    </div>
+    <!-- header -->
+    <header>
+    
+        <nav class="navbar bg-body fixed-top px-5 py-4">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a href=""><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Produit</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Catégorie et Accessoires</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">A propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+    
+                        </ul>
+    
+                    </div>
+                </div>
+                <a href=""><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+    
+    </header>
+    <!-- section banner -->
+    <section class="section-banner">
+        <div class="banner-container">
+            
+        </div>
+    </section>
+    <h6 class="text-center titre">SHOPPING CART</h6>
+    <p class="link-home"> <a href="">HOME </a> / SHOPPING CART</p>
+
+    <!-- Main -->
+    <main>
+        <div class="first-container">
+            <div class="container py-4">
+              <div class="d-grid gap-4 d-md-flex">
+                <button class="btn px-5 py-2 rounded-0" type="button">SHOPPING CART</button>
+                <button class="btn px-5 py-2 rounded-0" type="button">WISHLIST</button>
+                <button class="btn px-5 py-2 rounded-0 checkout" type="button">CHEKCK OUT</button>
+                <button class="btn px-5 py-2 rounded-0" type="button">ORDER COMPLETE</button>
+              </div>
+            </div>
+        </div>
+        <div class="middle-container">
+            <div class="container">
+              <form class="row needs-validation" novalidate>
+                          
+              </form>
+                <div class="row py-3">
+                  <!-- Premiere colonne  avec details beling et order -->
+                  <div class="col-md-6 px-5">
+                      <!-- Belling details  -->
+                      <div class="billing-details mb-5">
+                        <h3>BELLING DETAILS</h3>
+                        <span class="soulignement"></span>
+                        <!-- Name  -->
+                        <div class="col-md-12 mb-3 ">
+                          <input type="text" class="form-control border border-0 bg-light rounded-0" id="validationCustom01" placeholder="Your name here..." required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
+                        </div>
+
+                        <!-- Email  -->
+                        <div class="col-md-12 mb-3 ">
+                          <input type="email" class="form-control border border-0 bg-light rounded-0" id="validationCustom01" placeholder="Email addtess here..." required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please enter a valid email.
+                          </div>
+                        </div>
+
+                        <!-- phone -->
+                        <div class="col-md-12 mb-3 ">
+                            <input type="text" class="form-control border border-0 bg-light rounded-0" id="validationCustom01" placeholder="Phone here..." required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                              Please give a valid number.
+                            </div>
+                        </div>
+
+                        <!-- Company name  --> 
+                        <div class="col-md-12 mb-3 ">
+                          <input type="text" class="form-control border border-0 bg-light rounded-0" id="validationCustom01" placeholder="Company name here..." required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please give a valid company name.
+                          </div>
+                      </div>
+
+                        <!-- Contry -->
+                        <div class="col-md-12 mb-3 ">
+                            <select class="form-select border border-0 bg-light rounded-0" id="floatingSelect" aria-label="Floating label  select example" required>
+                              <option selected>Contry...</option>
+                              <option value="Australie">Australie</option>
+                              <option value="Senegal">Senegal</option>
+                              <option value="Canada">Canada</option>
+                            </select>
+                            
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                              
+                            <div class="invalid-feedback">
+                              Please select a valid contry.
+                            </div>
+                        </div>
+
+                        <!-- State -->
+                        <div class="col-md-12 mb-3 ">
+                            <select class="form-select border border-0 bg-light rounded-0" id="floatingSelect" aria-label="Floating label  select example" required>
+                              <option selected>State...</option>
+                              <option value="Dhaka">Daha</option>
+                              <option value="New York">New York</option>
+                              <option value="London">London</option>
+                            </select>
+                            
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                              
+                            <div class="invalid-feedback">
+                              Please select a valid State.
+                            </div>
+                        </div>
+
+                        <!-- Town City -->
+                        <div class="col-md-12 mb-3 ">
+                            <select class="form-select border border-0 bg-light rounded-0" id="floatingSelect" aria-label="" required>
+                              <option selected>Town/City...</option>
+                              <option value="Dakar">Dakar</option>
+                              <option value="New York">New York</option>
+                              <option value="Ottawa">Ottawa</option>
+                            </select>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                              
+                            <div class="invalid-feedback">
+                              Please select a valid contry.
+                            </div>
+                        </div>
+
+                        <!-- Your address -->
+                        <div class="col-md-12 mb-3 ">
+                          <textarea class="form-control border border-0 bg-light rounded-0" placeholder="Your address here..." id="floatingTextarea2" style="height: 100px" required></textarea>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                              
+                            <div class="invalid-feedback">
+                              Please select a valid contry.
+                            </div>
+                        </div>
+                      </div>
+                      <!-- Fin billing details  -->
+
+                      <!-- Debut Our Order  -->
+                      <div class="order mb-5">
+                        <h3>OUR ORDER</h3>
+                        <span class="soulignement"></span>
+                        <table class="table">
+                          <thead class="table-light">
+                            <tr>
+                              <th scope="col" class="col-md-10">PRODUCT</th>
+                              <th scope="col" >TOTAL</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="col-md-10">Dummy Pruduct Name x 2</td>
+                              <td>$86.00</td>
+                            </tr>
+                            <tr>
+                              <td class="col-md-10">Dummy Pruduct Name x 1</td>
+                              <td>$69.00</td>
+                            </tr>
+                            <tr>
+                              <td class="col-md-10">Cart Subtotal</td>
+                              <td>$155.00</td>
+                            </tr>
+                            <tr>
+                              <td class="col-md-10">Shipping and Handing</td>
+                              <td>$15.00</td>
+                            </tr>
+                            <tr>
+                              <td class="col-md-10">Vat</td>
+                              <td>$00</td>
+                            </tr>
+                            <tr>
+                              <td class="col-md-10 total">Order total</td>
+                              <td class="total">$170.00</td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                      </div>
+                      <!-- Fin our order  -->                        
+                  </div>
+
+                  <!-- Deuxieme colonne avec different adresse et method payment -->
+                  <div class="col-md-6 px-5">
+                    <!-- Different address  -->
+                    <div class="different-address mb-5">
+                      <h3>SHIP TO DIFFERENT ADDRESS</h3>
+                      <span class="soulignement"></span>
+                      <!-- Name  -->
+                      <div class="col-md-12 mb-3 ">
+                        <input type="text" class="form-control border border-0 bg-light rounded-0" id="validationCustom01" placeholder="Your name here..." required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
+                      </div>
+  
+                      <!-- Email  -->
+                      <div class="col-md-12 mb-3 ">
+                        <input type="email" class="form-control border border-0 bg-light rounded-0" id="validationCustom01" placeholder="Email addtess here..." required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                          Please enter a valid email.
+                        </div>
+                      </div>
+  
+                      <!-- phone -->
+                      <div class="col-md-12 mb-3 ">
+                          <input type="text" class="form-control border border-0 bg-light rounded-0" id="validationCustom01" placeholder="Phone here..." required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please give a valid number.
+                          </div>
+                      </div>
+  
+                      <!-- Company name  --> 
+                      <div class="col-md-12 mb-3 ">
+                        <input type="text" class="form-control border border-0 bg-light rounded-0" id="validationCustom01" placeholder="Company name here..." required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                          Please give a valid company name.
+                        </div>
+                    </div>
+  
+                      <!-- Contry -->
+                      <div class="col-md-12 mb-3 ">
+                          <select class="form-select border border-0 bg-light rounded-0" id="floatingSelect" aria-label="Floating label  select example" required>
+                            <option selected>Contry...</option>
+                            <option value="Australie">Australie</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Canada">Canada</option>
+                          </select>
+                          
+                          <div class="valid-feedback">
+                              Looks good!
+                          </div>
+                            
+                          <div class="invalid-feedback">
+                            Please select a valid contry.
+                          </div>
+                      </div>
+  
+                      <!-- State -->
+                      <div class="col-md-12 mb-3 ">
+                          <select class="form-select border border-0 bg-light rounded-0" id="floatingSelect" aria-label="Floating label  select example" required>
+                            <option selected>State...</option>
+                            <option value="Dhaka">Daha</option>
+                            <option value="New York">New York</option>
+                            <option value="London">London</option>
+                          </select>
+                          
+                          <div class="valid-feedback">
+                              Looks good!
+                          </div>
+                            
+                          <div class="invalid-feedback">
+                            Please select a valid State.
+                          </div>
+                      </div>
+  
+                      <!-- Town City -->
+                      <div class="col-md-12 mb-3 ">
+                          <select class="form-select border border-0 bg-light rounded-0" id="floatingSelect" aria-label="" required>
+                            <option selected>Town/City...</option>
+                            <option value="Dakar">Dakar</option>
+                            <option value="New York">New York</option>
+                            <option value="Ottawa">Ottawa</option>
+                          </select>
+                          <div class="valid-feedback">
+                              Looks good!
+                          </div>
+                            
+                          <div class="invalid-feedback">
+                            Please select a valid contry.
+                          </div>
+                      </div>
+  
+                      <!-- Your address -->
+                      <div class="col-md-12 mb-3 ">
+                        <textarea class="form-control border border-0 bg-light rounded-0" placeholder="Your address here..." id="floatingTextarea2" style="height: 100px" required></textarea>
+                          <div class="valid-feedback">
+                              Looks good!
+                          </div>
+                            
+                          <div class="invalid-feedback">
+                            Please select a valid contry.
+                          </div>
+                      </div>
+                    </div>
+                    <!-- Fin different address  -->
+
+                    <!-- Payment method  -->
+                    <div class="payment-method mb-5">
+                      <h3>PAYMENT METHOD</h3>
+                      <span class="soulignement"></span>
+                      <div class="accordion border border-0" id="accordionExample">
+                        <div class="accordion-item rounded-0 mb-3 border border-0">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button bg-light rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              DIRECT BANK TRANSFER
+                            </button>
+                          </h3>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit laborum quibusdam aut commodi molestias ad labore modi officia, consequuntur dolore odio tempore, fugit eveniet non natus consectetur possimus reprehenderit.</P>                            
+                            </div>
+                          </div>
+                        </div>
+  
+                        <!-- Cheque Payment  -->
+                        <div class="accordion-item rounded-0 mb-3 border border-0">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button collapsed bg-light rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              CHEQUE PAIEMENT
+                            </button>
+                          </h3>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta impedit libero vero at, quos veritatis cumque quas error sunt recusandae quis suscipit nobis eveniet obcaecati eligendi quasi repellendus, autem a?</p>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <!-- Paypal  -->
+                        <div class="accordion-item rounded-0 mb-3 border border-0">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button collapsed bg-light rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              PAYPAL
+                            </button>
+                          </h3>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt rerum voluptate consequuntur ad voluptates officia eos possimus. Architecto, voluptatibus? Ratione consequuntur sapiente eos iste neque velit nihil esse incidunt dolor.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="col-md-6 ">
+                        <button class="px-5 py-2 border border-0 place-order">PLACE ORDER</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="main-footer  px-5 pt-5">
+                <div class="element-main-footer">
+                    <h3>CONTACT US</h3>
+                    <span class="decoration"></span>
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Adresse : </p>
+    
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">28 Green Tower, Street Name, New York City, USA</p>
+    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Cell-Phone :</p>
+    
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">012345 - 123456789</p>
+    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Email : </p>
+    
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">your-email@gmail.com</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="element-main-footer">
+                    <h4>ACCOUNTS</h4>
+                    <span class="decoration"></span>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Account</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Wishlist</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Cart</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Sign In</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Check out</a>
+                </div>
+                <div class="element-main-footer">
+                    <h4>SHIPPING</h4>
+                    <span class="decoration"></span>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Account</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Wishlist</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Cart</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Sign In</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Check out</a>
+                </div>
+                <div class="element-main-footer">
+                    <h4>EMAIL NEWSLETTERS</h4>
+                    <span class="decoration"></span>
+                    <form action="" class="">
+                        <div class="email">
+                            <input type="email" class="" id="inputEmail" placeholder="Email/Address">
+                        </div>
+                        <div class="subscribe">
+                            <button class="d-block mt-2">SUBSCRIBE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright  px-5 py-2">
+                <div class="element-copyright mt-3">
+                    <p>© CodeCarnival 2022. All Rights Reserved.</p>
+                </div>
+                <div class="element-copyright mt-3">
+                    <img src="../public/images/payment/1.png" alt="">
+                    <img src="../public/images/payment/2.png" alt="">
+                    <img src="../public/images/payment/3.png" alt="">
+                    <img src="../public/images/payment/4.png" alt="">
+    
+                </div>
+    
+            </div>
+        </div>
+    
+    </footer>
+   
+    <script src="paiement.js"></script>
+    <script>
+        // scroll
+            let calcScrollValue = () => {
+                let scrollProgress = document.getElementById('progress');
+                let scrolProgressValue = document.getElementById('progressValue');
+
+                let pos = document.documentElement.scrollTop;
+                let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                let scrollValue = Math.round((pos * 100) / calcHeight)
+                if (pos > 10) {
+                    scrollProgress.style.display = 'grid';
+                } else {
+                    scrollProgress.style.display = 'none';
+                }
+
+                scrollProgress.addEventListener('click', () => {
+                    document.documentElement.scrollTop = 0;
+                })
+
+                scrollProgress.style.background = `conic-gradient( #C8A165 ${scrollValue}%, white ${scrollValue}%)`;
+            }
+
+            // Ajouter un seul gestionnaire d'événements
+            window.addEventListener('scroll', () => {
+                // navBarFixed();
+                calcScrollValue();
+            });
+
+            // Exécutez les fonctions une fois au chargement de la page
+            window.addEventListener('load', () => {
+                // navBarFixed();
+                calcScrollValue();
+            });
+
+            //menu
+            let menuTogler = document.querySelector('.menuTogler');
+            let menuToglerIcon = document.querySelector('.menuTogler i');
+            let dropDownMenu = document.querySelector('.dropDownMenu');
+
+            menuTogler.onclick = function () {
+                dropDownMenu.classList.toggle('open');
+                let isOpen = dropDownMenu.classList.contains('open');
+
+                menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
+            }
+    </script>
+</body>
+
+</html>
