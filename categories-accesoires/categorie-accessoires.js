@@ -59,7 +59,6 @@ btnShirt.addEventListener('click', showShirt);
 // Tout 
 function showFourniture() {
     all.forEach(element => {
-        // alert("Bon");
         if (!element.classList.contains('categorieItem')) {
             element.classList.add('hide');
         } else {
