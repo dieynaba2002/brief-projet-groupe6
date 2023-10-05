@@ -13,6 +13,19 @@ body{
     background-color: #F6F6F6;
 }
 
+.link-home {
+    position: relative;
+    margin-top: -15vh;
+    padding-bottom: 2.5vh;
+    color: white;
+    margin-left: 2vh;
+    font-weight: bold;
+}
+
+.link-home a {
+    color: white;
+}
+
 .grid-container-detail-produit{
     display: grid;
     grid-template-columns: 70% 28%;
@@ -225,9 +238,313 @@ body{
 .categories li a {
     color: gray;
 }
+/* Deuxieme type de liste (en liste) */
+ .icone {
+    border-right: 2px solid gray;
+    padding: 0 2vh;
+}
+
+.element-price {
+    color: var(--deco-color);
+}
+
+.panier button {
+    border: none;
+    background-color: #E9ECEF;
+    border-right: 2px solid gray;
+}
+
+.text-element {
+    margin-bottom: 4.3vh;
+}
+
+
+/* Fin colonne de taille 8  */
 
 /* Media querie */
 @media (max-width:767px){
+    .grid-container-detail-produit {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 18px;
+        margin: 0 auto;
+        width: 90%;
+        padding: 15px;
+
+    }
+    .contenu-detail {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .detail {
+        width: 100%;
+        margin: 0 auto;
+        /* border: 2px solid; */
+    }
+
+    .entete {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .entete-left p {
+        margin: 2px;
+        font-size: 9px;
+    }
+
+    .icone-star i {
+        color: var(--main-color);
+        font-size: 12px;
+    }
+
+    .texte-detail {
+        padding: 10px;
+    }
+
+    .texte-detail p ,span{
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    .color {
+        display: flex;
+        padding: 10px;
+        height: 25px;
+    }
+
+    .color p {
+        margin-top: -13px;
+    }
+
+    .choix-color {
+        margin-left: 10px;
+        height: 15px;
+        width: 15px;
+        margin-top: -8px;
+    }
+    .customer-desc {
+        display: grid;
+        grid-template-columns: auto;
+        background-color: #F6F6F6;
+        gap: 15px;
+    }
+
+    .description {
+        height: 230px;
+        background-color: white;
+    }
+
+    .description button {
+        display: block;
+        margin: 0 auto 5px;
+        width: 90%;
+        padding: 10px;
+        border: none;
+        background-color: #EEEEEE;
+    }
+
+    .cible {
+        margin-top: 10px !important;
+        background-color: var(--text-color-hover) !important;
+        color: white;
+    }
+
+    .customer-review {
+        padding: 15px;
+        background-color: white;
+    }
+
+    .commentaire {
+        display: flex;
+    }
+
+    .contain-star {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .flex-star {
+        border: 1px solid var(--text-color);
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 0;
+        color: var(--main-color);
+        padding-right: 16px;
+        font-size: 8px;
+    }
+    .btn-review {
+        border: none;
+        background-color: var(--main-color);
+        color: white;
+        padding: 10px;
+        width: auto;
+    }
+    .deco {
+        width: 10%;
+        border: 2px solid var(--text-color);
+        margin-left: 10px;
+    }
     
+    
+
 }
 
+@media (min-width:768px) and (max-width:990px) {
+    .grid-container-detail-produit {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 18px;
+        margin: 0 auto;
+        width: 90%;
+        padding: 15px;
+
+    }
+
+    .contenu-detail {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .detail {
+        width: 100%;
+        margin: 0 auto;
+        /* border: 2px solid; */
+    }
+
+    .entete {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .entete-left p {
+        margin: 2px;
+        font-size: 9px;
+    }
+
+    .icone-star i {
+        color: var(--main-color);
+        font-size: 12px;
+    }
+
+    .texte-detail {
+        padding: 10px;
+    }
+
+    .texte-detail p,
+    span {
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    .color {
+        display: flex;
+        padding: 10px;
+        height: 25px;
+    }
+
+    .color p {
+        margin-top: -13px;
+    }
+
+    .choix-color {
+        margin-left: 10px;
+        height: 15px;
+        width: 15px;
+        margin-top: -8px;
+    }
+
+    .customer-desc {
+        display: grid;
+        grid-template-columns: auto;
+        background-color: #F6F6F6;
+        gap: 15px;
+    }
+
+    .description {
+        height: 230px;
+        background-color: white;
+    }
+
+    .description button {
+        display: block;
+        margin: 0 auto 5px;
+        width: 90%;
+        padding: 10px;
+        border: none;
+        background-color: #EEEEEE;
+    }
+
+    .cible {
+        margin-top: 10px !important;
+        background-color: var(--text-color-hover) !important;
+        color: white;
+    }
+
+    .customer-review {
+        padding: 15px;
+        background-color: white;
+    }
+
+    .commentaire {
+        display: flex;
+    }
+
+    .contain-star {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+
+    .flex-star {
+        border: 1px solid var(--text-color);
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 0;
+        color: var(--main-color);
+        padding-right: 26px;
+        font-size: 8px;
+    }
+
+    .btn-review {
+        border: none;
+        background-color: var(--main-color);
+        color: white;
+        padding: 10px;
+        width: auto;
+    }
+
+    .deco {
+        width: 10%;
+        border: 2px solid var(--text-color);
+        margin-left: 10px;
+    }
+
+
+}

@@ -30,7 +30,7 @@
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <a href=""><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
+                        <a href="../accueil/accueil.html"><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -58,8 +58,8 @@
     
                     </div>
                 </div>
-                <a href=""><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
-                <a class="navbar-brand" href="../panier1/panier.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="../accueil/accueil.html"><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </nav>
     
@@ -72,7 +72,7 @@
     </section>
     <h6 class="text-center titre">SHOPPING CART</h6>
 
-    <p class="link-home"> <a href="#">HOME </a> / PRODUCT LIST VIEW</p>
+    <p class="link-home"> <a href="../accueil/accueil.html">HOME </a> / PRODUCT LIST VIEW</p>
 
     <!-- Main -->
     <main>
@@ -98,13 +98,13 @@
                                 <div class="card-body">
                                   <blockquote class="blockquote mb-0">
                                     <p> <a href="#">Chair</a></p>
-                                    <p class="title"> <a href="#" class="fourniture">Fourniture</a></p>
-                                    <ul class="title">
-                                        <li> <button class="bag">Bag</button></li>
-                                        <li> <button class="shoes">Shoes</button></li>
-                                        <li> <button class="watch">Watch</button></li>
-                                        <li> <button class="tshirt">T-Shirt</button></li>
-                                        <li> <button class="shirt">Shirt</button></li>
+                                    <button class="bouton active title fourniture bg-body" onclick="filterSelection('all')">Fourniture</button>
+                                    <ul>
+                                        <li> <button class="btn-bag bg-body text-body-secondary" onclick="filterSelection('bag')">Bag</button></li>
+                                        <li> <button class="btn-shoes bg-body text-body-secondary" onclick="filterSelection('shoes')">Shoes</button></li>
+                                        <li> <button class="btn-watch bg-body text-body-secondary" onclick="filterSelection('watch')">Watch</button></li>
+                                        <li> <button class="btn-tshirt bg-body text-body-secondary" onclick="filterSelection('tshirt')">T-Shirt</button></li>
+                                        <li> <button class="btn-shirt bg-body text-body-secondary" onclick="filterSelection('shirt')">Shirt</button></li>
                                     </ul>
                                     <p class="title"> <a href="#">Accessoires</a></p>
                                     <p class="title"> <a href="#">Top Brands</a></p>
@@ -196,10 +196,12 @@
                             </div>
     
                             <!-- Les carte avec images  -->
-                            <!-- Premiere ligne  -->
+                            
+                            
                             <div class="row mb-4">
+                                <!-- Premiere ligne  -->
                                 <!-- element 1  -->
-                                <div class="card-element  col-md-4">
+                                <div class="card-element categorieItem bag col-md-4 mb-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
                                             <div class="image-categorie image1">
@@ -229,7 +231,7 @@
                                 </div>
                                 
                                 <!-- element 2  -->
-                                <div class="card-element col-md-4">
+                                <div class="card-element categorieItem shoes col-md-4 mb-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
                                             <div class="image-categorie image2">
@@ -258,7 +260,7 @@
                                 </div>
                                 
                                 <!-- element 3  -->
-                                <div class="card-element  col-md-4">
+                                <div class="card-element categorieItem bag col-md-4 mb-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
                                             <div class="image-categorie image3">
@@ -284,12 +286,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-    
-                            <!-- Deuxieme ligne  -->
-                            <div class="row mb-4">
+
+                                <!-- Deuxieme ligne  -->
                                 <!-- element 1  -->
-                                <div class="card-element col-md-4">
+                                <div class="card-element categorieItem shoes col-md-4 mb-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
                                             <div class="image-categorie image4">
@@ -318,7 +318,7 @@
                                 </div>
                                 
                                 <!-- element 2  -->
-                                <div class="card-element col-md-4">
+                                <div class="card-element categorieItem shirt col-md-4 mb-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
                                             <div class="image-categorie image5">
@@ -346,7 +346,7 @@
                                 </div>
                                 
                                 <!-- element 3  -->
-                                <div class="card-element col-md-4">
+                                <div class="card-element categorieItem tshirt col-md-4 mb-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
                                             <div class="image-categorie image6">
@@ -373,12 +373,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-    
-                            <!-- Troisieme ligne  -->
-                            <div class="row mb-4">
+                                
+                                <!-- Troisieme ligne  -->
                                 <!-- element 1  -->
-                                <div class="card-element col-md-4">
+                                <div class="card-element categorieItem watch col-md-4 mb-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
                                             <div class="image-categorie image7">
@@ -407,7 +405,7 @@
                                 </div>
                                 
                                 <!-- element 2  -->
-                                <div class="card-element col-md-4">
+                                <div class="card-element categorieItem tshirt col-md-4 mb-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
                                             <div class="image-categorie image8">
@@ -435,7 +433,7 @@
                                 </div>
                                 
                                 <!-- element 3  -->
-                                <div class="card-element col-md-4">
+                                <div class="card-element categorieItem watch shirt col-md-4 mb-4">
                                     <div class="card shadow rounded-0 border border-0">
                                         <div class="card-body">
                                             <div class="image-categorie image9">
@@ -476,7 +474,7 @@
                             </div>
                             <!-- Carte affichage liste  -->
                             <!-- Carte 1 -->
-                            <div class="row g-0 bg-body position-relative mb-4 ">
+                            <div class="categorieItem watch bag row g-0 bg-body position-relative mb-4 ">
                                 <div class="col-md-4 mb-md-0 p-md-4">
                                     <div class="image-categorie image8">
                                         <button class="new">New</button>
@@ -516,7 +514,7 @@
                             </div>
 
                             <!-- Carte 2 -->
-                            <div class="row g-0 bg-body position-relative mb-4">
+                            <div class="categorieItem tshirt shoes row g-0 bg-body position-relative mb-4">
                                 <div class="col-md-4 mb-md-0 p-md-4">
                                     <div class="image-categorie image2">
                                         <button class="new">New</button>
@@ -557,7 +555,7 @@
                             </div>
 
                             <!-- Carte 3 -->
-                            <div class="row g-0 bg-body position-relative mb-4">
+                            <div class="categorieItem shirt bag row g-0 bg-body position-relative mb-4">
                                 <div class="col-md-4 mb-md-0 p-md-4">
                                     <div class="image-categorie image7">
                                         <button class="new">New</button>
@@ -598,7 +596,7 @@
                             </div>
 
                             <!-- Carte 4 -->
-                            <div class="row g-0 bg-body position-relative mb-4">
+                            <div class="categorieItem shoes tshirt row g-0 bg-body position-relative mb-4">
                                 <div class="col-md-4 mb-md-0 p-md-4">
                                     <div class="image-categorie image4">
                                         <button class="new">New</button>
@@ -641,7 +639,7 @@
                             </div>
 
                             <!-- Carte 5 -->
-                            <div class="row g-0 bg-body position-relative mb-4">
+                            <div class="categorieItem bag shirt row g-0 bg-body position-relative mb-4">
                                 <div class="col-md-4 mb-md-0 p-md-4">
                                     <div class="image-categorie image9">
                                         <button class="new">New</button>
@@ -835,48 +833,11 @@
                 menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
             }
     </script>
+
+    <script src="categorie-accessoires.js"></script>
     <!-- Script pour faire apparaitre le menu en liste ou en block  -->
     <script>
-        // Affichage en liste 
-        list = document.querySelector(".categorie-list");
-
-        // Affichage en block 
-        block = document.querySelector(".categorie-blok");
-
-        first = document.getElementById("fist-list-cart");
-        second = document.getElementById("second-list-cart");
         
-        // Affichage en liste
-        block.addEventListener('click' ,()=>{
-            first.style.display='block';
-            second.style.display='none';
-        })
-
-        // Affichage en block
-        list.addEventListener('click' ,()=>{
-            second.style.display='block';
-            first.style.display='none';
-        })
-
-        // block.onclick = function(){
-        //     console.log("Seclectionner");
-        //     // alert("Bonjour")
-        //     menu1 = document.querySelector(".fist-list-cart");
-        //     menu1.classList.add("fist-list-cart-active"); 
-        // }
-
-        list.onclick = function(){
-            menu2 = document.querySelector(".second-list-cart");
-            menu2.classList.add("second-list-cart-active");
-            alert("Selectionner") 
-        }
-//         hamburger.onclick = function(){
-//             navBar = document.querySelector(".nav-bar");
-//             navBar.classList.toggle("active");           
-
-//             banierre = document.querySelector(".banierre")
-//             banierre.classList.toggle("active");
-// }
     </script>
 </body>
 

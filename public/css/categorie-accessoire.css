@@ -60,6 +60,7 @@ main{
 .categories li a{
     color: gray;
 }
+
 /* Fin categories  */
 
 /* Debut price  */
@@ -273,8 +274,8 @@ main{
     display: none;
 }
 
-.show{
-    display: none;
+.active{
+    display: block;
 }
 
 /* Media Queries  */

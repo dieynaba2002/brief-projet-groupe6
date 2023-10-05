@@ -39,36 +39,36 @@
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <a href=""><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
+                        <a href="../accueil/accueil.html"><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                                <a class="nav-link active" aria-current="page" href="../accueil/accueil.html">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Produit</a>
+                                <a class="nav-link" href="../page-produits/produit.html">Produit</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Catégorie et Accessoires</a>
+                                <a class="nav-link" href="../categories-accesoires/categories-accessoire.html">Catégorie et Accessoires</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">A propos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="../blog/blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="../page-contact/">Contact</a>
                             </li>
 
                         </ul>
 
                     </div>
                 </div>
-                <a href=""><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
-                <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="../accueil/accueil.html"><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
+                <a class="navbar-brand" href="../panier1/panier.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </nav>
 
@@ -80,6 +80,8 @@
         </div>
     </section>
     <h6 class="text-center titre">SINGLE PRODUCT</h6>
+
+    <p class="link-home"> <a href="../accueil/accueil.html">HOME </a> / PRODUCT LIST VIEW</p>
     <!-- Debut Section grid detail produit-->
     <section>
         <div class="grid-container-detail-produit">
@@ -128,24 +130,18 @@
                             <div class="size">XL</div>
                         </div>
                         <div class="panier">
-                            <div class="contain-btn mt-2">
-                                <td class="align-middle border-bottom-0">
-                                    <div class="d-flex flex-row">
-                                        <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
-                                
-                                        <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control form-control-sm"
-                                            style="width: 50px;" />
-                                
-                                        <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </td>
-                            </div>
-                            <div class="icone-items">
-                                
+                            <div class="icone-part d-flex">
+                                <p class="bg-body-secondary py-2 px-3 text-center me-3">
+                                    <button class="icone">+</button>
+                                    <button class="icone">02</button>
+                                    <button class="icone border border-0">-</button>
+                                </p>
+                                <p class="bg-body-secondary py-2 px-3 text-center ">
+                                    <span class="icone"><i class="bi bi-heart"></i></span>
+                                    <span class="icone"><i class="bi bi-search"></i></span>
+                                    <span class="icone"><i class="bi bi-arrow-repeat"></i></span>
+                                    <span class="icone border border-0"><i class="bi bi-person-arms-up"></i></span>
+                                </p>
                             </div>
                         </div>
                         <div class="caroussel">

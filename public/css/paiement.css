@@ -64,7 +64,11 @@ main{
 
 .first-container .checkout{
     background-color: var(--text-color-hover);
+}
+
+.first-container .checkout a{
     color: white;
+
 }
 
 .middle-container .container{

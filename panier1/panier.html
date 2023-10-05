@@ -30,7 +30,7 @@
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <a href=""><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
+                        <a href="../accueil/accueil.html"><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -46,7 +46,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">A propos</a>
-                            </li>
+                        </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../blog/blog.html">Blog</a>
                             </li>
@@ -58,7 +58,7 @@
     
                     </div>
                 </div>
-                <a href=""><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
+                <a href="../accueil/accueil.html"><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
                 <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </nav>
@@ -71,21 +71,24 @@
         </div>
     </section>
     <h6 class="text-center titre">Shop</h6>
-    <div class="container">
-        <div class="grid-container-row">
-           
-            <div class="header-content-panier" >
-                <div class="content-content-panier1" id="content-content-panier1"><a href="">SHOPPING</a></div>
-                <div class="content-content-panier1"><a href="">WISHLIST</a></div>
-                <div class="content-content-panier1"><a href="">CHECKOUT</a></div>
-                <div class="content-content-panier1"><a href="">ORDER COMPLETE</a></div>
 
+    <p class="link-home"> <a href="../accueil/accueil.html">HOME </a> / PRODUCT LIST VIEW</p>
+
+    <div class="container pt-5">
+        <div class="grid-container-row">
+    
+            <div class="header-content-panier">
+                <div class="content-content-panier1" id="content-content-panier1"><a href="../panier1/panier.html">SHOPPING</a></div>
+                <div class="content-content-panier1"><a href="">WISHLIST</a></div>
+                <div class="content-content-panier1"><a href="../paimenent/paiement.html">CHECKOUT</a></div>
+                <div class="content-content-panier1"><a href="">ORDER COMPLETE</a></div>
+    
             </div>
-            
-                
-               <div class="background-blanc-panier">
+    
+    
+            <div class="background-blanc-panier">
                 <hr>
-                <div class="content-card-img-panier" >
+                <div class="content-card-img-panier">
                     <!-- <hr> -->
                     <div class="content-card-img1-panier">
                         <div class="content1-img">
@@ -97,25 +100,25 @@
                         </div>
                         <div class="icons-content-panier-midle">
                             <div class="content-container-icon-panier">
-                                <p><i class="bi bi-dash"></i></p>
+                                <button class="validate-panier"><i class="bi bi-dash"></i></button>
                             </div>
                             <div class="content-container-icon-panier">
-                                <p>02</p>
+                                <p id="number-increment">02</p>
                             </div>
                             <div class="content-container-icon-panier">
-                                <p><i class="bi bi-plus"></i></p>
+                                <button class="validate-panier"><i class="bi bi-plus"></i></button>
                             </div>
                         </div>
                         <div class="content-number-panier">
                             <p>$112.00</p>
                         </div>
                         <div class="content-container-icon-panier">
-                            <p><i class="bi bi-x"></i></p>
+                            <button class="danger"><i class="bi bi-x"></i></button>
                         </div>
     
                     </div>
                 </div>
-                <div class="content-card-img-panier" >
+                <div class="content-card-img-panier">
                     <!-- <hr> -->
                     <div class="content-card-img1-panier">
                         <div class="content1-img">
@@ -127,25 +130,25 @@
                         </div>
                         <div class="icons-content-panier-midle">
                             <div class="content-container-icon-panier">
-                                <p><i class="bi bi-dash"></i></p>
+                                <button class="validate-panier"><i class="bi bi-dash"></i></button>
                             </div>
                             <div class="content-container-icon-panier">
-                                <p>02</p>
+                                <p id="number-increment">02</p>
                             </div>
                             <div class="content-container-icon-panier">
-                                <p><i class="bi bi-plus"></i></p>
+                                <button class="validate-panier"><i class="bi bi-plus"></i></button>
                             </div>
                         </div>
                         <div class="content-number-panier">
                             <p>$112.00</p>
                         </div>
                         <div class="content-container-icon-panier">
-                            <p><i class="bi bi-x"></i></p>
+                            <button class="danger"><i class="bi bi-x"></i></button>
                         </div>
     
                     </div>
                 </div>
-                <div class="content-card-img-panier" >
+                <div class="content-card-img-panier">
                     <!-- <hr> -->
                     <div class="content-card-img1-panier">
                         <div class="content1-img">
@@ -157,106 +160,110 @@
                         </div>
                         <div class="icons-content-panier-midle">
                             <div class="content-container-icon-panier">
-                                <p><i class="bi bi-dash"></i></p>
+                                <button class="validate-panier"><i class="bi bi-dash"></i></button>
                             </div>
                             <div class="content-container-icon-panier">
-                                <p>02</p>
+                                <p id="number-increment">02</p>
                             </div>
                             <div class="content-container-icon-panier">
-                                <p><i class="bi bi-plus"></i></p>
+                                <button class="validate-panier"><i class="bi bi-plus"></i></button>
                             </div>
                         </div>
                         <div class="content-number-panier">
                             <p>$112.00</p>
                         </div>
                         <div class="content-container-icon-panier">
-                            <p><i class="bi bi-x"></i></p>
+                            <button class="danger"><i class="bi bi-x"></i></button>
                         </div>
     
                     </div>
                 </div>
-
-               </div>
-            
-           
-            <div class="two-content-panier" >
+    
+            </div>
+    
+    
+            <div class="two-content-panier">
                 <div class="content1-coupon-header-panier">
-                   <div class="header-content-title-panier">
-                    <h6>COUPON DISCOUNT</h6>
-                    <hr>
-                   </div>
-                   <div>
-                    <p class="content-gris-color-panier">Enter your coupon code if you have one!</p>
-                   </div>
-                   <div class="content-input1-panier">
-                    <!-- <input type="text" placeholder=""> -->
-                    <input class="form-control bg-secondary-subtle text-secondary" type="text" value="Enter your code here" aria-label="Disabled input example">
-                   </div>
-                   <div>
-                    <button class="btn-apply-panier">APLY COUPON</button>
-                   </div>
+                    <div class="header-content-title-panier">
+                        <h6>COUPON DISCOUNT</h6>
+                        <hr>
+                    </div>
+                    <div>
+                        <p class="content-gris-color-panier">Enter your coupon code if you have one!</p>
+                    </div>
+                    <div class="content-input1-panier">
+                        <!-- <input type="text" placeholder=""> -->
+                        <input class="form-control bg-secondary-subtle text-secondary" type="text"
+                            value="Enter your code here" aria-label="Disabled input example">
+                    </div>
+                    <div>
+                        <button class="btn-apply-panier">APLY COUPON</button>
+                    </div>
                 </div>
-                <div class="table-content-panier-container" >
+                <div class="table-content-panier-container">
                     <div class="header-content-title-panier">
                         <h6>PAYMENT DETAILS</h6>
                         <hr>
-                       </div>
-
-               
-                <div class="table-content-panier  " >
-                    <table class="table  " >
-                        <tbody>
-                            <tr>
-                                <td>Cart subtotal</td>
-                                <td>$168.00</td>
-                              </tr>
-                              <tr>
-                                <td>Cart subtotal</td>
-                                <td>$168.00</td>
-                              </tr>
-                              <tr>
-                                <td>vat</td>
-                                <td>$168.00</td>
-                              </tr>
-                              <tr>
-                                <td id="subtotal-panier"> ORDER TOTAL </td>
-                                <td id="subtotal-panier">$168.00</td>
-                              </tr>
-                        </tbody>
-
-                    </table>
+                    </div>
+    
+    
+                    <div class="table-content-panier  ">
+                        <table class="table  ">
+                            <tbody>
+                                <tr>
+                                    <td>Cart subtotal</td>
+                                    <td>$168.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Cart subtotal</td>
+                                    <td>$168.00</td>
+                                </tr>
+                                <tr>
+                                    <td>vat</td>
+                                    <td>$168.00</td>
+                                </tr>
+                                <tr>
+                                    <td id="subtotal-panier"> ORDER TOTAL </td>
+                                    <td id="subtotal-panier">$168.00</td>
+                                </tr>
+                            </tbody>
+    
+                        </table>
+                    </div>
                 </div>
+    
             </div>
-
-            </div>
-            <div class="content-calculate-shipping-panier" >
+            <div class="content-calculate-shipping-panier">
                 <div class="header-content-title-panier">
                     <h6>CALCULATE SHIPPING</h6>
                     <hr>
                 </div>
                 <div>
                     <p class="content-gris-color-panier">Enter your coupon code if you have one!</p>
-                   </div>
+                </div>
                 <div>
                     <form action="">
                         <!-- <input type="text" placeholder="country">
-                        <input type="text" placeholder="Region/State">
-                        <input type="text" placeholder="post-code"> -->
+                            <input type="text" placeholder="Region/State">
+                            <input type="text" placeholder="post-code"> -->
                         <div class=" d-flex   gx-5" id="input-content-panier">
-                        <input class="form-control bg-secondary-subtle text-secondary" type="text" value="country" aria-label="Disabled input example">
-                        <input class="form-control bg-secondary-subtle text-secondary" type="text" value="Region/State" aria-label="Disabled input example" id="input-content-seconde-panier">
-                        <input class="form-control bg-secondary-subtle text-secondary" type="text" value="post-code" aria-label="Disabled input example">
-
+                            <input class="form-control bg-secondary-subtle text-secondary" type="text" value="country"
+                                aria-label="Disabled input example">
+                            <input class="form-control bg-secondary-subtle text-secondary" type="text" value="Region/State"
+                                aria-label="Disabled input example" id="input-content-seconde-panier">
+                            <input class="form-control bg-secondary-subtle text-secondary" type="text" value="post-code"
+                                aria-label="Disabled input example">
+    
                         </div>
                         <div>
                             <button class="btn-apply-panier">GET QUOTE</button>
-                           </div>
-                    
+                        </div>
+    
                     </form>
                 </div>
             </div>
         </div>
-
+    
     </div>
      <!-- Mettez votre contenu ici juste apres la section -->
      <footer>
