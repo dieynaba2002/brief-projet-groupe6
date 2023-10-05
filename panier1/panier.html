@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../public/css/panier1.css">
+    <link rel="stylesheet" href="../public/css/footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Panier</title>
+</head>
+<body>
+    <div id="progress">
+        <span id="progressValue">&#x1F815</span>
+    </div>
+    <!-- header -->
+    <header>
+    
+        <nav class="navbar bg-body-tertiary fixed-top px-5">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a href="../accueil/accueil.html"><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../accueil/accueil.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../page-produits/produit.html">Produit</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../categories-accesoires/categories-accessoire.html">Catégorie et Accessoires</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">A propos</a>
+                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../blog/blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../page-contact/contact.html">Contact</a>
+                            </li>
+    
+                        </ul>
+    
+                    </div>
+                </div>
+                <a href="../accueil/accueil.html"><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+    
+    </header>
+    <!-- section banner -->
+    <section class="section-banner">
+        <div class="banner-container">
+            
+        </div>
+    </section>
+    <h6 class="text-center titre">Shop</h6>
+
+    <p class="link-home"> <a href="../accueil/accueil.html">HOME </a> / PRODUCT LIST VIEW</p>
+
+    <div class="container pt-5">
+        <div class="grid-container-row">
+    
+            <div class="header-content-panier">
+                <div class="content-content-panier1" id="content-content-panier1"><a href="../panier1/panier.html">SHOPPING</a></div>
+                <div class="content-content-panier1"><a href="">WISHLIST</a></div>
+                <div class="content-content-panier1"><a href="../paimenent/paiement.html">CHECKOUT</a></div>
+                <div class="content-content-panier1"><a href="">ORDER COMPLETE</a></div>
+    
+            </div>
+    
+    
+            <div class="background-blanc-panier">
+                <hr>
+                <div class="content-card-img-panier">
+                    <!-- <hr> -->
+                    <div class="content-card-img1-panier">
+                        <div class="content1-img">
+                            <img src="../public/images/panier1/1.jpg" alt="">
+                        </div>
+                        <div class="content-number-panier">
+                            <p>Color:Black</p>
+                            <p id="margin-bootom-para-panier">Size:SL</p>
+                        </div>
+                        <div class="icons-content-panier-midle">
+                            <div class="content-container-icon-panier">
+                                <button class="validate-panier"><i class="bi bi-dash"></i></button>
+                            </div>
+                            <div class="content-container-icon-panier">
+                                <p id="number-increment">02</p>
+                            </div>
+                            <div class="content-container-icon-panier">
+                                <button class="validate-panier"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="content-number-panier">
+                            <p>$112.00</p>
+                        </div>
+                        <div class="content-container-icon-panier">
+                            <button class="danger"><i class="bi bi-x"></i></button>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="content-card-img-panier">
+                    <!-- <hr> -->
+                    <div class="content-card-img1-panier">
+                        <div class="content1-img">
+                            <img src="../public/images/panier1/3.jpg" alt="">
+                        </div>
+                        <div class="content-number-panier">
+                            <p>Color:Black</p>
+                            <p id="margin-bootom-para-panier">Size:SL</p>
+                        </div>
+                        <div class="icons-content-panier-midle">
+                            <div class="content-container-icon-panier">
+                                <button class="validate-panier"><i class="bi bi-dash"></i></button>
+                            </div>
+                            <div class="content-container-icon-panier">
+                                <p id="number-increment">02</p>
+                            </div>
+                            <div class="content-container-icon-panier">
+                                <button class="validate-panier"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="content-number-panier">
+                            <p>$112.00</p>
+                        </div>
+                        <div class="content-container-icon-panier">
+                            <button class="danger"><i class="bi bi-x"></i></button>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="content-card-img-panier">
+                    <!-- <hr> -->
+                    <div class="content-card-img1-panier">
+                        <div class="content1-img">
+                            <img src="../public/images/panier1/2.jpg" alt="">
+                        </div>
+                        <div class="content-number-panier">
+                            <p>Color:Black</p>
+                            <p id="margin-bootom-para-panier">Size:SL</p>
+                        </div>
+                        <div class="icons-content-panier-midle">
+                            <div class="content-container-icon-panier">
+                                <button class="validate-panier"><i class="bi bi-dash"></i></button>
+                            </div>
+                            <div class="content-container-icon-panier">
+                                <p id="number-increment">02</p>
+                            </div>
+                            <div class="content-container-icon-panier">
+                                <button class="validate-panier"><i class="bi bi-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="content-number-panier">
+                            <p>$112.00</p>
+                        </div>
+                        <div class="content-container-icon-panier">
+                            <button class="danger"><i class="bi bi-x"></i></button>
+                        </div>
+    
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+            <div class="two-content-panier">
+                <div class="content1-coupon-header-panier">
+                    <div class="header-content-title-panier">
+                        <h6>COUPON DISCOUNT</h6>
+                        <hr>
+                    </div>
+                    <div>
+                        <p class="content-gris-color-panier">Enter your coupon code if you have one!</p>
+                    </div>
+                    <div class="content-input1-panier">
+                        <!-- <input type="text" placeholder=""> -->
+                        <input class="form-control bg-secondary-subtle text-secondary" type="text"
+                            value="Enter your code here" aria-label="Disabled input example">
+                    </div>
+                    <div>
+                        <button class="btn-apply-panier">APLY COUPON</button>
+                    </div>
+                </div>
+                <div class="table-content-panier-container">
+                    <div class="header-content-title-panier">
+                        <h6>PAYMENT DETAILS</h6>
+                        <hr>
+                    </div>
+    
+    
+                    <div class="table-content-panier  ">
+                        <table class="table  ">
+                            <tbody>
+                                <tr>
+                                    <td>Cart subtotal</td>
+                                    <td>$168.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Cart subtotal</td>
+                                    <td>$168.00</td>
+                                </tr>
+                                <tr>
+                                    <td>vat</td>
+                                    <td>$168.00</td>
+                                </tr>
+                                <tr>
+                                    <td id="subtotal-panier"> ORDER TOTAL </td>
+                                    <td id="subtotal-panier">$168.00</td>
+                                </tr>
+                            </tbody>
+    
+                        </table>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="content-calculate-shipping-panier">
+                <div class="header-content-title-panier">
+                    <h6>CALCULATE SHIPPING</h6>
+                    <hr>
+                </div>
+                <div>
+                    <p class="content-gris-color-panier">Enter your coupon code if you have one!</p>
+                </div>
+                <div>
+                    <form action="">
+                        <!-- <input type="text" placeholder="country">
+                            <input type="text" placeholder="Region/State">
+                            <input type="text" placeholder="post-code"> -->
+                        <div class=" d-flex   gx-5" id="input-content-panier">
+                            <input class="form-control bg-secondary-subtle text-secondary" type="text" value="country"
+                                aria-label="Disabled input example">
+                            <input class="form-control bg-secondary-subtle text-secondary" type="text" value="Region/State"
+                                aria-label="Disabled input example" id="input-content-seconde-panier">
+                            <input class="form-control bg-secondary-subtle text-secondary" type="text" value="post-code"
+                                aria-label="Disabled input example">
+    
+                        </div>
+                        <div>
+                            <button class="btn-apply-panier">GET QUOTE</button>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+     <!-- Mettez votre contenu ici juste apres la section -->
+     <footer>
+        <div class="container-footer">
+            <div class="main-footer  px-5 pt-5">
+                <div class="element-main-footer">
+                    <h3>CONTACT US</h3>
+                    <span class="decoration"></span>
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Adresse : </p>
+    
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">28 Green Tower, Street Name, New York City, USA</p>
+    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Cell-Phone :</p>
+    
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">012345 - 123456789</p>
+    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Email : </p>
+    
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">your-email@gmail.com</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="element-main-footer">
+                    <h4>ACCOUNTS</h4>
+                    <span class="decoration"></span>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Account</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Wishlist</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Cart</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Sign In</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Check out</a>
+                </div>
+                <div class="element-main-footer">
+                    <h4>SHIPPING</h4>
+                    <span class="decoration"></span>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Account</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Wishlist</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Cart</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Sign In</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Check out</a>
+                </div>
+                <div class="element-main-footer">
+                    <h4>EMAIL NEWSLETTERS</h4>
+                    <span class="decoration"></span>
+                    <form action="" class="">
+                        <div class="email">
+                            <input type="email" class="" id="inputEmail" placeholder="Email/Address">
+                        </div>
+                        <div class="subscribe">
+                            <button class="d-block mt-2">SUBSCRIBE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright  px-5 py-2">
+                <div class="element-copyright mt-3">
+                    <p>© CodeCarnival 2022. All Rights Reserved.</p>
+                </div>
+                <div class="element-copyright mt-3">
+                    <img src="../public/images/payment/1.png" alt="">
+                    <img src="../public/images/payment/2.png" alt="">
+                    <img src="../public/images/payment/3.png" alt="">
+                    <img src="../public/images/payment/4.png" alt="">
+    
+                </div>
+    
+            </div>
+        </div>
+    
+    </footer>
+   
+   
+   <script>
+        // scroll
+            let calcScrollValue = () => {
+                let scrollProgress = document.getElementById('progress');
+                let scrolProgressValue = document.getElementById('progressValue');
+
+                let pos = document.documentElement.scrollTop;
+                let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                let scrollValue = Math.round((pos * 100) / calcHeight)
+                if (pos > 10) {
+                    scrollProgress.style.display = 'grid';
+                } else {
+                    scrollProgress.style.display = 'none';
+                }
+
+                scrollProgress.addEventListener('click', () => {
+                    document.documentElement.scrollTop = 0;
+                })
+
+                scrollProgress.style.background = `conic-gradient( #C8A165 ${scrollValue}%, white ${scrollValue}%)`;
+            }
+
+            // Ajouter un seul gestionnaire d'événements
+            window.addEventListener('scroll', () => {
+                // navBarFixed();
+                calcScrollValue();
+            });
+
+            // Exécutez les fonctions une fois au chargement de la page
+            window.addEventListener('load', () => {
+                // navBarFixed();
+                calcScrollValue();
+            });
+
+            //menu
+            let menuTogler = document.querySelector('.menuTogler');
+            let menuToglerIcon = document.querySelector('.menuTogler i');
+            let dropDownMenu = document.querySelector('.dropDownMenu');
+
+            menuTogler.onclick = function () {
+                dropDownMenu.classList.toggle('open');
+                let isOpen = dropDownMenu.classList.contains('open');
+
+                menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
+            }
+    </script>
+</body>
+</html>

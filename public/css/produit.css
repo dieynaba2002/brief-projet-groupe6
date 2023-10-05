@@ -1,0 +1,182 @@
+
+* {
+    padding: 0;
+    margin: auto;
+}
+
+.M-Shop{
+    position: relative;
+    color: white;
+    /* margin-top: -10vh; */
+    margin-left: 20vh;
+    font-size: 1vh;
+
+}
+
+.header {
+    justify-content: center;
+    display: flex;
+    width: 66%;
+    /* margin-top: -3vh; */
+    /* margin-left: 11px; */
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.headerLeft ul {
+    display: flex;
+    justify-items: center;
+    gap: 10px;
+    margin: 5px;
+}
+
+.headerLeft li {
+    display: flex;
+
+}
+.headerRight p{
+    margin: 5px;
+}
+
+.containerMain {
+    /* background-color: #ECECEA; */
+    width: 52%;
+    height: 45%;
+}
+
+.containerCards {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(1fr, 4);
+    width: 60%;
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    margin: 20px;
+    margin-left: 150px;
+    margin: 0 auto;
+
+}
+
+.cards { 
+    width: 50%;
+    gap: 2vh;
+    padding: 10px;
+    /* margin-top: 2vh; */
+}
+@media only screen and(min-width:768px) {
+    .cards{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* Media queries  */
+@media only screen and (max-width: 768px) {
+    .containerCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .containerCards {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+
+    }
+
+}
+
+/* Fin Media Queries  */
+
+.NewP {
+    display: flex;
+    background-color: #ECECEA;
+    width: 100%;
+    margin-right: 170vh;
+    gap: 10vh;
+}
+
+.NewP p {
+    /* margin-right: 140vh; */
+    margin-top: 1.5vh;
+}
+
+.NewP h5 {
+    border-radius: 2px;
+    background-color: #c8a165;
+    /* width: 15vh; */
+    height: 15px;
+    text-align: center;
+    /* margin-left: 1vh; */
+    margin-top: 2vh;
+    font-size: 10px;
+    color: white;
+}
+#Sal{
+    background-color: brown;
+}
+
+.Imge img {
+    width: 100%;
+    height: 15vh;
+}
+
+.Imge p {
+    font-size: 10px;
+    text-align: center;
+}
+
+
+.fa-star {
+    position: relative;
+    left: 60px;
+    justify-content: center;
+    margin-left: 10px;
+    max-width: 1px;
+    font-weight: 10px;
+    top: -6vh;
+    font-size: 10px;
+}
+@media(max-width:768){
+    .fa-star{
+        position: fixed;
+        top: 0 auto;
+        left: 0 auto;
+    }
+}
+
+.d-flex {
+    position: relative;
+    background-color: #f7f7f7;
+    margin-left: 2vh;
+    gap: 1%;
+    top: -1vh;
+    padding: 5px;
+}
+.Padignation{
+    border:1px solid red;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 67%;
+    left: 228px;
+    margin-top: 20px;
+}
+@media only screen and(max-width:600px) {
+    .Padignation{
+        width: 67%;
+        margin-top: 0 auto;
+        position: fixed;
+    }
+    
+}

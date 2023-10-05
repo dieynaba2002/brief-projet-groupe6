@@ -7,14 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../public/css/contact.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <title>Accueil</title>
+    <title>Contact</title>
 </head>
 
 <body>
@@ -23,93 +24,131 @@
     </div>
     <!-- header -->
     <header>
-    
-        <nav class="navbar bg-body fixed-top px-5 py-4">
+
+        <nav class="navbar bg-body-tertiary fixed-top px-5">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <a href=""><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
+                        <a href="../accueil/accueil.html"><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                                <a class="nav-link active" aria-current="page" href="../accueil/accueil.html">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Produit</a>
+                                <a class="nav-link" href="../page-produits/produit.html">Produit</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Catégorie et Accessoires</a>
+                                <a class="nav-link" href="../categories-accesoires/categories-accessoire.html">Catégorie et Accessoires</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">A propos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="../blog/blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
-    
+
                         </ul>
-    
+
                     </div>
                 </div>
-                <a href=""><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
-                <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="../accueil/accueil.html"><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
+                <a class="navbar-brand" href="../panier1/panier.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </nav>
-    
+
     </header>
     <!-- section banner -->
     <section class="section-banner">
         <div class="banner-container">
-            
+
         </div>
     </section>
     <h6 class="text-center titre">Shop</h6>
-    
+    <h6 class="H-contact">HOME &nbsp;/ &nbsp;CONTACT US</h6>
+        <!-- */***************************************Debut section contact*******************************/* -->
+        <div class="form">
+            <div class="Coordon">
+                <div class="Appel">
+                    <span><i class="fa-solid fa-phone" style="color: #5c6370;"></i>
+                        +880-123412345 <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; +880-123412345
+                    </span>
+                </div>
+                <div class="Message"> <br>
+                    <span><i class="fa-solid fa-envelope" style="color: #5c6370;"></i>
+                        campagny-@gmmail.com <br>
+                        &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; your-@gmail.com
+                    </span>
+                </div>
+                <div class="Sen"> <br>
+                    <h5>SEND MESSAGE</h5>
+                </div>
+                <div class="Champs">
+                    <input type="text" placeholder="&nbsp;&nbsp; your name here..."> <br>
+                    <br>
+                    <input type="text" placeholder="&nbsp;&nbsp; your email here..."> <br>
+                    <br>
+                    <textarea name="" id="Mess" placeholder="&nbsp;&nbsp; you Message"></textarea>
+                </div>
+                <br>
+                <button id="Boutton" style="color: white;">SUBMIT MESSAGE</button>
+            </div>
+            <div class="Cart">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                            marginheight="0" marginwidth="0"
+                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Yoff Dakar Senegal&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                            href="https://connectionsgame.org/">Connections NYT</a></div>
+                </div>
+            </div>
+        </div>
+<!-- */***************************************fin de section contact******************/* -->
     <!-- Mettez votre contenu ici juste apres la section -->
     <footer>
         <div class="container-footer">
             <div class="main-footer  px-5 pt-5">
                 <div class="element-main-footer">
                     <h3>CONTACT US</h3>
-                     <span class="decoration"></span>
+                    <span class="decoration"></span>
                     <div class="row ">
                         <div class="col-md-4">
                             <p class="fw-bold">Adresse : </p>
-    
+
                         </div>
                         <div class="col-md-8">
                             <p class="">28 Green Tower, Street Name, New York City, USA</p>
-    
+
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <p class="fw-bold">Cell-Phone :</p>
-    
+
                         </div>
                         <div class="col-md-8">
                             <p class="">012345 - 123456789</p>
-    
+
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <p class="fw-bold">Email : </p>
-    
+
                         </div>
                         <div class="col-md-8">
                             <p class="">your-email@gmail.com</p>
-    
+
                         </div>
                     </div>
                 </div>
@@ -153,60 +192,60 @@
                     <img src="../public/images/payment/2.png" alt="">
                     <img src="../public/images/payment/3.png" alt="">
                     <img src="../public/images/payment/4.png" alt="">
-    
+
                 </div>
-    
+
             </div>
         </div>
-    
+
     </footer>
-   
-   
-   <script>
+
+
+    <script>
         // scroll
-            let calcScrollValue = () => {
-                let scrollProgress = document.getElementById('progress');
-                let scrolProgressValue = document.getElementById('progressValue');
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById('progress');
+            let scrolProgressValue = document.getElementById('progressValue');
 
-                let pos = document.documentElement.scrollTop;
-                let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                let scrollValue = Math.round((pos * 100) / calcHeight)
-                if (pos > 10) {
-                    scrollProgress.style.display = 'grid';
-                } else {
-                    scrollProgress.style.display = 'none';
-                }
-
-                scrollProgress.addEventListener('click', () => {
-                    document.documentElement.scrollTop = 0;
-                })
-
-                scrollProgress.style.background = `conic-gradient( #C8A165 ${scrollValue}%, white ${scrollValue}%)`;
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight)
+            if (pos > 10) {
+                scrollProgress.style.display = 'grid';
+            } else {
+                scrollProgress.style.display = 'none';
             }
 
-            // Ajouter un seul gestionnaire d'événements
-            window.addEventListener('scroll', () => {
-                // navBarFixed();
-                calcScrollValue();
-            });
+            scrollProgress.addEventListener('click', () => {
+                document.documentElement.scrollTop = 0;
+            })
 
-            // Exécutez les fonctions une fois au chargement de la page
-            window.addEventListener('load', () => {
-                // navBarFixed();
-                calcScrollValue();
-            });
+            scrollProgress.style.background = `conic-gradient( #C8A165 ${scrollValue}%, white ${scrollValue}%)`;
+        }
 
-            //menu
-            let menuTogler = document.querySelector('.menuTogler');
-            let menuToglerIcon = document.querySelector('.menuTogler i');
-            let dropDownMenu = document.querySelector('.dropDownMenu');
+        // Ajouter un seul gestionnaire d'événements
+        window.addEventListener('scroll', () => {
+            // navBarFixed();
+            calcScrollValue();
+        });
 
-            menuTogler.onclick = function () {
-                dropDownMenu.classList.toggle('open');
-                let isOpen = dropDownMenu.classList.contains('open');
+        // Exécutez les fonctions une fois au chargement de la page
+        window.addEventListener('load', () => {
+            // navBarFixed();
+            calcScrollValue();
+        });
 
-                menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
-            }
+        //menu
+        let menuTogler = document.querySelector('.menuTogler');
+        let menuToglerIcon = document.querySelector('.menuTogler i');
+        let dropDownMenu = document.querySelector('.dropDownMenu');
+
+        menuTogler.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            let isOpen = dropDownMenu.classList.contains('open');
+
+            menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
+        }
     </script>
 </body>
 

@@ -1,0 +1,345 @@
+css * {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    /* background-color: var(--gris); */
+
+}
+
+/* ********Definition de nos couleur de bases************ */
+:root {
+    --blanc: #FFFFFF;
+    --marron: #C87065;
+    --gris: #F6F6F6;
+    --jaune: #C8A266;
+    --icons: #F9FBFD;
+}
+
+/* ********Design de notre section************ */
+
+body {
+    background-color: var(--gris);
+
+}
+
+.grid-container-row {
+    display: block;
+
+}
+
+/* ********Header panier************ */
+.header-content-panier {
+    display: flex;
+    justify-content: space-between;
+    /* justify-items: center; */
+
+}
+
+.content-content-panier1 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blanc);
+    width: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.content-content-panier1:hover {
+    background-color: var(--jaune);
+    border: 3px solid var(--blanc);
+    transition: 1s;
+    scale: 1.1;
+}
+
+.content-content-panier1 a {
+    text-decoration: none;
+    color: grey;
+}
+
+.content-content-panier1 a:hover {
+    color: var(--blanc);
+}
+
+#content-content-panier1:hover {
+    background-color: var(--blanc);
+    border: 3px solid var(--jaune);
+    transition: 1s;
+    scale: 1.1;
+
+
+
+}
+
+#content-content-panier1 a:hover {
+    color: var(--jaune);
+}
+
+#content-content-panier1 {
+    background-color: var(--jaune);
+
+}
+
+#content-content-panier1 a {
+    color: var(--blanc);
+
+}
+
+.link-home {
+    position: relative;
+    margin-top: -15vh;
+    padding-bottom: 2.5vh;
+    color: white;
+    margin-left: 2vh;
+    font-weight: bold;
+}
+
+.link-home a {
+    color: white;
+}
+
+/* ******Cardcontent********* */
+.background-blanc-panier {
+    background-color: var(--blanc);
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.content-card-img-panier {
+    margin-bottom: 20px;
+}
+
+.background-blanc-panier hr {
+    margin-bottom: 0;
+}
+
+.content-card-img1-panier {
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.icons-content-panier-midle {
+    display: flex;
+    justify-content: center;
+}
+
+.content-container-icon-panier p {
+    background-color: var(--icons);
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 8px;
+    color: grey;
+}
+
+.content-number-panier {
+    color: grey;
+
+}
+
+.danger:hover {
+    font-size: 25px;
+    color: var(--blanc);
+    background-color: red;
+    border-radius: 10px;
+}
+
+.validate-panier:hover {
+    font-size: 25px;
+    color: var(--blanc);
+    background-color: green;
+    border-radius: 10px;
+
+}
+
+.content-container-icon-panier button {
+    background-color: var(--icons);
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 8px;
+    color: grey;
+    border: none;
+}
+
+#number-increment {
+    margin-right: 8px;
+}
+
+#margin-bootom-para-panier {
+    line-height: 3px;
+
+}
+
+.content1-img img {
+    /* width: 10%; */
+    width: 100px;
+    height: 110px;
+}
+
+.content1-img img:hover {
+    transition: 2s ease-in-out;
+    scale: 1.3;
+}
+
+.two-content-panier {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.header-content-title-panier hr {
+    width: 6%;
+    border: 3px solid var(--marron);
+}
+
+.content1-coupon-header-panier {
+    background-color: var(--blanc);
+    padding: 40px;
+}
+
+.table-content-panier-container {
+    background-color: var(--blanc);
+    margin-right: 20px;
+    padding: 40px;
+}
+
+#subtotal-panier {
+    color: var(--marron);
+    font-weight: bold;
+}
+
+.content-gris-color-panier {
+    color: grey;
+    font-size: 12px;
+}
+
+.content-input1-panier {
+    width: 95%;
+    font-size: 12px;
+}
+
+.btn-apply-panier {
+    border: none;
+    color: var(--blanc);
+    background-color: var(--marron);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.btn-apply-panier:hover {
+    border: 3px solid var(--marron);
+    background-color: var(--blanc);
+    color: var(--marron);
+    transition: 1s ease-in;
+    rotate: 10deg;
+    translate: 1.1;
+}
+
+#input-content-panier {
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+
+#input-content-panier input {
+    /* margin-left:20px; */
+
+}
+
+.content-calculate-shipping-panier {
+    background-color: var(--blanc);
+    margin-top: 20px;
+    padding: 40px;
+}
+
+#input-content-seconde-panier {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header-content-title-panier hr {
+    animation: anime 1s ease-in-out infinite;
+}
+
+@keyframes anime {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@media screen and (max-width:770px) {
+    .header-content-panier {
+        /* display: grid;
+       grid-template-rows: 100% 100% 100% 100%; */
+        display: block;
+
+        width: 100% !important;
+
+        /* justify-content: space-between; */
+        /* justify-items: center; */
+
+    }
+
+    .content-content-panier1 {
+        padding-right: 43.5rem;
+        margin-top: 20px;
+
+    }
+
+    .content-content-panier1 a {
+        text-align: center;
+        padding-left: 40rem;
+        /* margin-left: 0; */
+        /* margin-right: 90rem; */
+    }
+
+}
+
+@media screen and (max-width:392px) {
+    .header-content-panier {
+
+        display: block;
+
+    }
+
+    .content-content-panier1 {
+        padding-right: 22.5rem;
+
+    }
+
+    .content-content-panier1 a {
+        text-align: center;
+        padding-left: 22rem;
+        margin-left: 0;
+    }
+
+    .content1-img {
+        width: 100%;
+
+    }
+
+    .content-card-img1-panier {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+
+    }
+
+    .two-content-panier {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+}

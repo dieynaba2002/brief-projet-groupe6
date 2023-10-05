@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    /* background-color: var(--gris); */
+
+}
+/* ********Definition de nos couleur de bases************ */
+:root{
+    --blanc:#FFFFFF;
+    --marron:#C87065;
+    --gris:#F6F6F6;
+    --jaune:#C8A266;
+}
+body{
+    background-color: var(--gris);
+
+}
+
+
+/* ********design de notre header validation************ */
+.header-content1-validate{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 10px solid var(--blanc);
+}
+.card1-description-validate{
+    background-color: var(--blanc);
+    width: 100%;
+    margin-left: 40px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    color: grey;
+  
+}
+.card1-description-validate p{
+    margin-top: 30px;
+}
+.card1-description-validate:hover{
+    background-color: var(--jaune);
+    border: 3px solid var(--blanc);
+    color: var(--blanc);
+    transition: 1s;
+    rotate: 10deg;
+    scale: 1.1; 
+}
+.card1-description-validate-un p{
+    margin-top: 30px;
+
+}
+.card1-description-validate-un:hover{
+    background-color: var(--jaune);
+    border: 3px solid var(--blanc);
+    color: var(--blanc);
+    transition: 1s;
+    rotate: 10deg;
+    scale: 1.1; 
+
+}
+.card1-description-validate-un{
+    background-color: var(--blanc);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    width: 100%;
+    color: grey;
+   
+}
+#order-description-validate p{
+    margin-top: 25px;
+}
+#order-description-validate{
+    background-color: var(--jaune);
+    width: 100%;
+    margin-left: 40px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    color: var(--blanc);
+}
+#order-description-validate:hover{
+    background-color: var(--blanc);
+    border: 3px solid var(--jaune);
+    color: var(--jaune);
+    transition: 1s;
+    rotate: 10deg;
+    scale: 1.1;
+}
+
+.cards-bottom-validate{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+}
+.header-content2-validate{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--blanc);
+    /* color: grey; */
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* align-items: center; */
+}
+.para-title-validate h6{
+    margin-top: 20px;
+}
+
+.header-content2-validate h6,p{
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+.para-title-validate:hover{
+    color: var(--marron);
+}
+/* **************Body-validate**************** */
+.cards-bottom-validate{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap:  50px;
+    background-color: var(--blanc);
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+   
+  
+}
+
+.left-body-validate{
+    margin-left: 0;
+    padding-left: 0;
+    float:left ;
+}
+.left-body-validate hr{
+    width: 40%;
+    border: 3px solid var(--marron);
+}
+
+.right-body-validate{
+    display: block;
+   padding-right: 60px;
+  
+}
+.details-topcontent-validate{
+    margin-top: 60px;
+
+}
+#subtotal{
+    color: var(--marron);
+    font-weight: bold;
+}
+.details-body-validate{
+   
+    background-color: var(--gris);
+    padding-left: 5px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.btn-order-validate{
+    margin-top: 20px;
+    background-color: var(--marron);
+    border: none;
+    padding: 5px;
+
+}
+.btn-order-validate:hover{
+    background-color: var(--blanc);
+    border: 3px solid var(--marron);
+    transition: 1s;
+    
+}
+.btn-order-validate:hover{
+    rotate: 10deg;
+    scale: 1.1;
+}
+.btn-order-validate a:hover{
+    color: var(--marron);
+
+}
+.btn-order-validate a{
+    color: var(--blanc);
+    
+    /* font-weight: bold; */
+    text-decoration: none;
+}
+/* Style par défaut pour les balises details */
+details {
+    cursor: pointer; /* Pour changer le curseur au survol */
+}
+
+/* Style pour l'icône de détail fermé */
+details:not([open]) > summary::after {
+    content: '\25B8'; /* Utilisez un autre caractère ou une image pour votre icône si vous le souhaitez */
+    display: inline-block;
+    margin-right: 5px;
+     float: right;
+}
+
+/* Style pour l'icône de détail ouvert */
+details[open] > summary::after {
+    content: '\25BE'; /* Utilisez un autre caractère ou une image pour votre icône si vous le souhaitez */
+    display: inline-block;
+    margin-right: 5px;
+    float: right;
+}
+details {
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out; /* Ajout d'une transition sur la propriété transform */
+}
+
+details:hover {
+    transform: translateX(10px); /* Déplacer la balise details de 5 pixels vers la droite au survol */
+}
+.left-body-validate hr{
+    animation: anime 1s ease-in-out  infinite;
+}
+@keyframes anime{
+    from {
+        transform: translateX(0%);
+      }
+    
+      to {
+        transform: translateX(100%);
+      }
+}
+/* *******medias queries******** */
+ @media screen  and (max-width:391px) {
+    .header-content1-validate{
+        display: block;
+        justify-content: center;
+       justify-items: center;
+        margin: 0;
+        gap: 20px;
+        
+       
+        border-bottom: none;
+    }
+   .card1-description-validate{
+        background-color: var(--blanc);
+        width: 100%;
+        margin-left: 0;
+       
+        display: flex;
+        place-content: center;
+        align-items: center;
+        color: grey;
+        margin-top: 20px;
+      
+    }
+   .card1-description-validate-un{
+        background-color: var(--blanc);
+        margin-left: 0;
+        display: flex;
+        place-content: center;
+        align-items: center;
+        width: 100%;
+        color: grey;
+        margin-top: 20px;
+       
+    }
+    #order-description-validate{
+        background-color: var(--jaune);
+        width: 100%;
+        display: flex;
+        place-content: center;
+        align-items: center;
+        color: var(--blanc);
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .header-content2-validate{
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--blanc);
+        /* color: grey; */
+        margin-top: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* align-items: center; */
+    }
+    
+    .header-content2-validate h6,p{
+        display: flex;
+        place-content: center;
+        align-items: center;
+        font-size: 11px;
+    }
+    .para-title-validate:hover{
+        color: var(--marron);
+    }
+    .cards-bottom-validate{
+        display: grid;
+        grid-template-columns: 100%;
+        gap:  50px;
+        background-color: var(--blanc);
+        margin-top: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+       
+      
+    }
+    
+ 
+
+}
