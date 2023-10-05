@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../public/css/whishlist.css">
+    <title>Wishlist</title>
+</head>
+
+<body>
+    <div id="progress">
+        <span id="progressValue">&#x1F815</span>
+    </div>
+
+    <header>
+    
+        <nav class="navbar bg-body fixed-top px-5 py-4">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a href="../accueil/accueil.html"><img src="../public/images/logo/logo.png" alt="" height="35vh"></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../accueil/accueil.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../page-produits/produit.html">Produit</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../categories-accesoires/categories-accessoire.html">Catégorie et Accessoires</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">A propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../blog/blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../page-contact/contact.html">Contact</a>
+                            </li>
+    
+                        </ul>
+    
+                    </div>
+                </div>
+                <a href="../accueil/accueil.html"><img src="../public/images/logo/logo.png" alt="" height="45vh"></a>
+                <a class="navbar-brand" href="../panier1/panier.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+    
+    </header>
+    <!-- section banner -->
+    <section class="section-banner">
+        <div class="banner-container">
+            
+        </div>
+    </section>
+    <h6 class="text-center titre">SHOPPING CART</h6>
+    <p class="link-home"> <a href="../accueil/accueil.html">HOME </a> / SHOPPING CART</p>
+    <!-- Main -->
+    <main>
+        <div class="first-container">
+            <div class="container py-4">
+              <div class="d-grid gap-4 d-md-flex">
+                <button class="btn px-5 py-2 rounded-0" type="button"><a href="../panier1/panier.html">SHOPPING CART</a></button>
+                <button class="btn px-5 py-2 rounded-0 whishlist" type="button"><a href="#">WISHLIST</a></button>
+                <button class="btn px-5 py-2 rounded-0 " type="button"><a href="../paimenent/paiement.html">CHEKCK OUT</a></button>
+                <button class="btn px-5 py-2 rounded-0" type="button"><a href="../validation/validation.html">ORDER COMPLETE</a></button>
+              </div>
+            </div>
+        </div>
+        <div class="middle-container">
+            <div class="container mt-3">
+                <div class="row bg-body-secondary mb-3 py-2">
+                    <div class="col-2"></div>
+                    <div class="col-2 "><h5>PRODUCT</h5></div>
+                    <div class="col-2 text-center"><h5>PRICE</h5></div>
+                    <div class="col-2 text-center"><h5>STOCK STATUS</h5></div>
+                    <div class="col-2 text-center"><h5>ADD TO CART</h5></div>
+                    <div class="col-2 text-center"><h5>REMOVE</h5></div>
+                </div>
+                <div class="row bg-body mb-3">
+                    <div class="col-2"><img src="../public/images/cart/1.jpg" alt="" style="width: 100%;"></div>
+                    <div class="product-container col-2 text-center py-3">
+                        <h6>DUMMY PRODUCT NAME</h6>
+                        <P class="product color">Color: Black</P>
+                        <p class="product size">Size: SL</p>
+                    </div> 
+                    <div class="product-item col-2 text-center ms-2">
+                        <p class="price">$56.00</p>
+                    </div>
+                    <div class="product-item col-2 text-center">
+                        <p>INSTOCK</p>
+                    </div>
+                    <div class="product-item col-2 text-center">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                    <div class="product-item col-2 text-center">
+                        <i class="bi bi-x bg-body-secondary px-2 py-2"></i>                        
+                    </div>
+                </div>
+                <div class="row bg-body mb-3">
+                    <div class="col-2"><img src="../public/images/cart/2.jpg" alt="" style="width: 100%;"></div>
+                    <div class="product-container col-2 text-center py-3">
+                        <h6>DUMMY PRODUCT NAME</h6>
+                        <P class="product color">Color: Black</P>
+                        <p class="product size">Size: SL</p>
+                    </div> 
+                    <div class="product-item col-2 text-center ms-2">
+                        <p class="price">$56.00</p>
+                    </div>
+                    <div class="product-item col-2 text-center">
+                        <p>INSTOCK</p>
+                    </div>
+                    <div class="product-item col-2 text-center">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                    <div class="product-item col-2 text-center">
+                        <i class="bi bi-x bg-body-secondary px-2 py-2"></i>                        
+                    </div>
+                </div>
+                <div class="row bg-body mb-3">
+                    <div class="col-2 mb-3"><img src="../public/images/product/6.jpg" alt="" style="width: 100%;"></div>
+                    <div class="product-container col-2 text-center py-3">
+                        <h6>DUMMY PRODUCT NAME</h6>
+                        <P class="product color">Color: Black</P>
+                        <p class="product size">Size: SL</p>
+                    </div> 
+                    <div class="product-item col-2 text-center ms-2">
+                        <p class="price">$56.00</p>
+                    </div>
+                    <div class="product-item col-2 text-center">
+                        <p>INSTOCK</p>
+                    </div>
+                    <div class="product-item col-2 text-center">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                    <div class="product-item col-2 text-center">
+                        <i class="bi bi-x bg-body-secondary px-2 py-2"></i>                        
+                    </div>
+                </div>
+
+                
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="main-footer  px-5 pt-5">
+                <div class="element-main-footer">
+                    <h3>CONTACT US</h3>
+                    <span class="decoration"></span>
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Adresse : </p>
+    
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">28 Green Tower, Street Name, New York City, USA</p>
+    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Cell-Phone :</p>
+    
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">012345 - 123456789</p>
+    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="fw-bold">Email : </p>
+    
+                        </div>
+                        <div class="col-md-8">
+                            <p class="">your-email@gmail.com</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="element-main-footer">
+                    <h4>ACCOUNTS</h4>
+                    <span class="decoration"></span>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Account</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Wishlist</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Cart</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Sign In</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Check out</a>
+                </div>
+                <div class="element-main-footer">
+                    <h4>SHIPPING</h4>
+                    <span class="decoration"></span>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Account</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Wishlist</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> My Cart</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Sign In</a><br>
+                    <a href="#"><i class="bi bi-record-circle"></i> Check out</a>
+                </div>
+                <div class="element-main-footer">
+                    <h4>EMAIL NEWSLETTERS</h4>
+                    <span class="decoration"></span>
+                    <form action="" class="">
+                        <div class="email">
+                            <input type="email" class="" id="inputEmail" placeholder="Email/Address">
+                        </div>
+                        <div class="subscribe">
+                            <button class="d-block mt-2">SUBSCRIBE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright  px-5 py-2">
+                <div class="element-copyright mt-3">
+                    <p>© CodeCarnival 2022. All Rights Reserved.</p>
+                </div>
+                <div class="element-copyright mt-3">
+                    <img src="../public/images/payment/1.png" alt="">
+                    <img src="../public/images/payment/2.png" alt="">
+                    <img src="../public/images/payment/3.png" alt="">
+                    <img src="../public/images/payment/4.png" alt="">
+    
+                </div>
+    
+            </div>
+        </div>
+    
+    </footer>
+   
+    
+    <script>
+        // scroll
+            let calcScrollValue = () => {
+                let scrollProgress = document.getElementById('progress');
+                let scrolProgressValue = document.getElementById('progressValue');
+
+                let pos = document.documentElement.scrollTop;
+                let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                let scrollValue = Math.round((pos * 100) / calcHeight)
+                if (pos > 10) {
+                    scrollProgress.style.display = 'grid';
+                } else {
+                    scrollProgress.style.display = 'none';
+                }
+
+                scrollProgress.addEventListener('click', () => {
+                    document.documentElement.scrollTop = 0;
+                })
+
+                scrollProgress.style.background = `conic-gradient( #C8A165 ${scrollValue}%, white ${scrollValue}%)`;
+            }
+
+            // Ajouter un seul gestionnaire d'événements
+            window.addEventListener('scroll', () => {
+                // navBarFixed();
+                calcScrollValue();
+            });
+
+            // Exécutez les fonctions une fois au chargement de la page
+            window.addEventListener('load', () => {
+                // navBarFixed();
+                calcScrollValue();
+            });
+
+            //menu
+            let menuTogler = document.querySelector('.menuTogler');
+            let menuToglerIcon = document.querySelector('.menuTogler i');
+            let dropDownMenu = document.querySelector('.dropDownMenu');
+
+            menuTogler.onclick = function () {
+                dropDownMenu.classList.toggle('open');
+                let isOpen = dropDownMenu.classList.contains('open');
+
+                menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
+            }
+    </script>
+</body>
+
+</html>

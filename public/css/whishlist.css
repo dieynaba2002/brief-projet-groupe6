@@ -62,30 +62,32 @@ main{
     color: white;
 }
 
-.first-container .checkout{
+.first-container .whishlist{
     background-color: var(--text-color-hover);
 }
-.first-container .checkout a{
+
+.first-container .whishlist a{
     color: white;
+
 }
 
 .middle-container .container{
     background-color: white;
 }
 
-.middle-container .container .place-order{
-    background-color: var(--deco-color);
-    color: white;
+
+
+.product-container{
+    margin-left: -2vh;
+}
+.middle-container .product{
+    font-size: 14px;
 }
 
-.middle-container .container .place-order:hover{
-    background-color: var(--text-color-hover);
+.middle-container .size{
+    margin-top: -2vh;
 }
 
-.middle-container .container .soulignement{
-    width: 10vh;
-    height: 0.4vh;
-    display: block;
-    margin: 5px 0 40px;
-    background-color: #C87065;
+.middle-container .product-item{
+    margin-top: 6.7vh;
 }

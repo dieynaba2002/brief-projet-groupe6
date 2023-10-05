@@ -72,7 +72,17 @@ html {
     list-style: none;
     text-decoration: none !important;
 }
+.offcanvas-body ul li a:hover{
+    background-color: var(--text-color-hover);
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+}
 
+.offcanvas-body ul li .active:hover{
+    
+    color: white;
+}
 
 .container-footer {
     width: 100%;

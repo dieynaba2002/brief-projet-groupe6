@@ -279,87 +279,13 @@ main{
 }
 
 /* Media Queries  */
-@media only screen and (min-width: 1400px){
-    .card-element .top{
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        top: -30vh;
-    }
 
-    .card-element .top .prix{
-        /* position: initial; */
-        margin-left: 20vh;
-    }
-
-    /* .card-element .icone{
-        border-right: none;
-        border-bottom: 2px solid gray;
-        padding: 0 0.6vh; */
-        /* padding: 0 1.2vh; pour width: >100%; */
-    /* } */
-    
-}
-@media only screen and (max-width: 1300){
-    .card-element .top{
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        top: -30vh;
-    }
-
-    .card-element .top .prix{
-        /* position: initial; */
-        margin-left: 20vh;
-    }
-
-    /* .card-element .icone{
-        border-right: none;
-        border-bottom: 2px solid gray;
-        padding: 0 0.6vh; */
-        /* padding: 0 1.2vh; pour width: >100%; */
-    /* } */
-    
-}
-@media only screen and (max-width: 1000px){
-    .card-element .top{
-        display: flex;
-        justify-content: space-between;
-        padding: 2vh;
-        position: relative;
-        top: -35vh;
-    }
-
-    .card-element .top .prix{
-        /* position: initial; */
-        margin-left: 15vh;
-    }
-
-    
-    
-    
-}
 
 @media only screen and (max-width: 960px){
-    .card-element .top{
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        top: -11vh;
-    }
-
-    .card-element .top button{
-        margin-left: -1vh;
-        margin-right: 2vh;
-    }
-    .card-element .top .prix{
-        /* position: initial; */
-        margin-left: 3vh;
-    }
-
-    .card-element .icone{
-        border-right: none;
-        border-bottom: 2px solid gray;
+    
+    #fist-list-cart .icone{
+        /* border-right: none;
+        border-bottom: 2px solid gray; */
         padding: 0 0.6vh;
         /* padding: 0 1.2vh; pour width: >100%; */
     }
